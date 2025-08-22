@@ -3,71 +3,1372 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>Tailwind v4 + Vite (HTML)</title>
+    <title>Plans</title>
   </head>
-  <body class="min-h-dvh bg-white text-zinc-900 antialiased">
-    <header class="sticky top-0 z-10 border-b bg-white/80 backdrop-blur">
+  <body class="min-h-dvh bg-white antialiased font-sans">
+    <header class="site-header py-3.5 fixed w-full top-0 z-[50] bg-white">
       <div
-        class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between"
+        class="w-full max-w-[1142px] px-4 mx-auto flex items-center gap-x-24 justify-between"
       >
-        <a href="#" class="text-lg font-semibold tracking-tight"
-          >Tailwind v4 + Vite</a
-        >
-        <nav class="flex items-center gap-3 text-sm">
-          <a class="px-3 py-1.5 rounded-lg hover:bg-zinc-100" href="#features"
-            >Features</a
-          >
-          <a
-            class="px-3 py-1.5 rounded-lg hover:bg-zinc-100"
-            href="#get-started"
-            >Get started</a
-          >
-          <a class="btn btn-brand" href="https://tailwindcss.com">Docs</a>
-        </nav>
+        <a href="#" class="-ml-[17px] w-full max-w-27">
+          <img src="/images/svg/plans-logo.svg" />
+        </a>
+        <div class="">
+          <ul class="flex gap-x-8">
+            <li>
+              <a
+                href="#"
+                class="font-medium text-gray-900 text-base transition-all ease-in-out delay-100 hover:text-orange-100"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-medium text-gray-900 text-base transition-all ease-in-out delay-100 hover:text-orange-100"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-medium text-gray-900 text-base transition-all ease-in-out delay-100 hover:text-orange-100"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-medium text-gray-900 text-base transition-all ease-in-out delay-100 hover:text-orange-100"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="py-2 px-6 font-semibold text-orange-100 border border-orange-100 rounded-lg text-base transition-all ease-in-out delay-100"
+                >Log In</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+    <main class="">
+      <section class="pt-30 bg-orange-50">
+        <div
+          class="w-full max-w-[1142px] px-4 mx-auto flex items-center gap-x-[30px]"
+        >
+          <div class="w-1/2">
+            <div
+              class="py-[5px] pl-[5px] pr-3 items-center gap-x-2 bg-white rounded-[30px] inline-flex"
+            >
+              <div
+                class="size-6 rounded-full bg-orange-200 flex items-center justify-center"
+              >
+                <figure class="size-[14px]">
+                  <img
+                    src="/images/svg/home.svg"
+                    alt="Home"
+                    class="size-full"
+                  />
+                </figure>
+              </div>
+              <p class="text-orange-200 font-semibold text-sm leading-6">
+                Insurance Marketplace
+              </p>
+            </div>
+            <h1
+              class="pt-2 font-bold font-sans-serif text-[56px] leading-[1.0714] tracking-[-0.02em] text-gray-900 font-timeless-serif w-full max-w-[430px]"
+            >
+              Compare Quotes. Get Covered.
+            </h1>
+            <p class="text-gray-900 text-lg font-medium py-4 leading-6">
+              Compare, Buy & Save on all your insurance needs.
+            </p>
+            <div class="flex gap-x-2">
+              <a
+                href="#"
+                class="bg-white text-center px-2 py-4 rounded-lg shadow-xs w-full max-w-[88px] hover:-translate-y-0.5 transition-all ease-in-out duration-150"
+              >
+                <figure class="size-7 mx-auto">
+                  <img
+                    src="/images/svg/life-icon.svg"
+                    alt="Life"
+                    class="size-full"
+                  />
+                </figure>
+                <p class="pt-3 text-gray-900 font-medium text-sm leading-none">
+                  Life
+                </p>
+              </a>
+              <a
+                href="#"
+                class="bg-white text-center px-2 py-4 rounded-lg shadow-xs w-full max-w-[88px] hover:-translate-y-0.5 transition-all ease-in-out duration-150"
+              >
+                <figure class="size-7 mx-auto">
+                  <img
+                    src="/images/svg/bundle.svg"
+                    alt="Bundle"
+                    class="size-full"
+                  />
+                </figure>
+                <p class="pt-3 text-gray-900 font-medium text-sm leading-none">
+                  Bundle
+                </p>
+              </a>
+              <a
+                href="#"
+                class="bg-white text-center px-2 py-4 rounded-lg shadow-xs w-full max-w-[88px] hover:-translate-y-0.5 transition-all ease-in-out duration-150"
+              >
+                <figure class="size-7 mx-auto">
+                  <img
+                    src="/images/svg/home-red-icon.svg"
+                    alt="Home"
+                    class="size-full"
+                  />
+                </figure>
+                <p class="pt-3 text-gray-900 font-medium text-sm leading-none">
+                  Home
+                </p>
+              </a>
+              <a
+                href="#"
+                class="bg-white text-center px-2 py-4 rounded-lg shadow-xs w-full max-w-[88px] hover:-translate-y-0.5 transition-all ease-in-out duration-150"
+              >
+                <figure class="size-7 mx-auto">
+                  <img src="/images/svg/pet.svg" alt="pet" class="size-full" />
+                </figure>
+                <p class="pt-3 text-gray-900 font-medium text-sm leading-none">
+                  Pet
+                </p>
+              </a>
+              <a
+                href="#"
+                class="bg-white text-center px-2 py-4 rounded-lg shadow-xs w-full max-w-[88px] hover:-translate-y-0.5 transition-all ease-in-out duration-150"
+              >
+                <figure class="size-7 mx-auto">
+                  <img
+                    src="/images/svg/travel.svg"
+                    alt="Travel"
+                    class="size-full"
+                  />
+                </figure>
+                <p class="pt-3 text-gray-900 font-medium text-sm leading-none">
+                  Travel
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="w-1/2">
+            <!-- <figure>
+              <img src="/images/hero.png" alt="" />
+            </figure> -->
+            <div class="relative max-w-[497px] ml-auto">
+              <figure class="w-full max-w-[497px] ml-auto">
+                <img
+                  src="/images/hero-image.png"
+                  alt="Hero image"
+                  class="size-full"
+                />
+              </figure>
+              <div
+                class="bg-white rounded-full border-2 border-orange-200 size-12 flex items-center justify-center shadow-[var(--drop-shadow-xs)] absolute -right-4 -top-4"
+              >
+                <figure class="size-6">
+                  <img
+                    src="/images/svg/bell.svg"
+                    alt="Bell"
+                    class="size-full"
+                  />
+                </figure>
+              </div>
+              <div
+                class="bg-white p-4 pb-[18px] rounded-2xl shadow-2xs text-center absolute top-0"
+              >
+                <p class="text-gray-900 text-sm font-semibold leading-[18px]">
+                  Review Score
+                </p>
+                <h1
+                  class="font-sans text-[40px] leading-none text-gray-900 font-semibold py-1"
+                >
+                  51
+                </h1>
+                <span
+                  class="px-2 py-1 uppercase bg-green-50 text-green-100 rounded-[34px] text-xs font-bold leading-none tracking-[0.36px]"
+                  >Good</span
+                >
+              </div>
+              <div
+                class="bg-white p-4 pb-[18px] rounded-2xl shadow-2xs text-center absolute bottom-6 -right-12 w-full max-w-[140px] flex flex-col items-center justify-center"
+              >
+                <div
+                  class="size-8 rounded-full bg-green-100 flex items-center justify-center"
+                >
+                  <figure class="w-4 h-3">
+                    <img
+                      src="/images/svg/tick-iocn.svg"
+                      alt="Tick"
+                      sizes="size-full"
+                    />
+                  </figure>
+                </div>
+                <p
+                  class="text-gray-900 text-sm font-semibold leading-[18px] pt-1.5"
+                >
+                  Claim Approved in Minutes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-16">
+        <div class="w-full max-w-[1142px] px-4 mx-auto">
+          <div
+            class="bg-gray-50 px-12 flex justify-between rounded-3xl overflow-hidden max-h-[280px]"
+          >
+            <div class="py-[76px] w-full max-w-[480px]">
+              <div class="flex items-center gap-x-2">
+                <figure class="size-6">
+                  <img
+                    src="/images/svg/handshake.svg"
+                    alt="Handshake"
+                    class="size-full"
+                  />
+                </figure>
+                <p class="text-orange-200 font-semibold text-base leading-6">
+                  Partnered with Leading Providers
+                </p>
+              </div>
+              <h2
+                class="text-[40px] leading-12 text-gray-900 font-bold font-sans-serif pt-2"
+              >
+                We Protect More than 250K+ Families
+              </h2>
+            </div>
+            <div class="flex gap-x-12">
+              <div class="flex flex-col gap-y-14 items-center animate-slide-up">
+                <figure class="w-full max-w-[138px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/allstate.png"
+                    alt="All State"
+                  />
+                </figure>
+                <figure class="w-full max-w-[170px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/farmers.png"
+                    alt="Farmers"
+                  />
+                </figure>
+                <figure class="w-full max-w-[170px] h-[22px]">
+                  <img
+                    class="size-full"
+                    src="/images/progressive.png"
+                    alt="Progressive"
+                  />
+                </figure>
+                <figure class="w-full max-w-[122px] h-[22px]">
+                  <img class="size-full" src="/images/geico.png" alt="Geico" />
+                </figure>
+                <figure class="w-full max-w-[166px] h-[24px]">
+                  <img
+                    class="size-full"
+                    src="/images/statefarm.png"
+                    alt="Statefarm"
+                  />
+                </figure>
+                <figure class="w-full max-w-[138px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/allstate.png"
+                    alt="All State"
+                  />
+                </figure>
+                <figure class="w-full max-w-[170px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/farmers.png"
+                    alt="Farmers"
+                  />
+                </figure>
+                <figure class="w-full max-w-[170px] h-[22px]">
+                  <img
+                    class="size-full"
+                    src="/images/progressive.png"
+                    alt="Progressive"
+                  />
+                </figure>
+                <figure class="w-full max-w-[122px] h-[22px]">
+                  <img class="size-full" src="/images/geico.png" alt="Geico" />
+                </figure>
+                <figure class="w-full max-w-[166px] h-[24px]">
+                  <img
+                    class="size-full"
+                    src="/images/statefarm.png"
+                    alt="Statefarm"
+                  />
+                </figure>
+              </div>
+              <div
+                class="flex flex-col gap-y-14 items-center animate-slide-down"
+              >
+                <figure class="w-full max-w-[138px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/prudential.png"
+                    alt="Prudential"
+                  />
+                </figure>
+                <figure class="w-full max-w-[170px] h-[25px]">
+                  <img
+                    class="size-full"
+                    src="/images/cover-wallet.png"
+                    alt="Cover Wallet"
+                  />
+                </figure>
+                <figure class="w-full max-w-[178px] h-[31px]">
+                  <img
+                    class="size-full"
+                    src="/images/metro-mile.png"
+                    alt="Metromile"
+                  />
+                </figure>
+                <figure class="w-full max-w-[122px] h-[23px]">
+                  <img class="size-full" src="/images/ethos.png" alt="Ethos" />
+                </figure>
+                <figure class="w-full max-w-[170px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/travelers.png"
+                    alt="Travelers"
+                  />
+                </figure>
+                <figure class="w-full max-w-[138px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/prudential.png"
+                    alt="Prudential"
+                  />
+                </figure>
+                <figure class="w-full max-w-[170px] h-[25px]">
+                  <img
+                    class="size-full"
+                    src="/images/cover-wallet.png"
+                    alt="Cover Wallet"
+                  />
+                </figure>
+                <figure class="w-full max-w-[178px] h-[31px]">
+                  <img
+                    class="size-full"
+                    src="/images/metro-mile.png"
+                    alt="Metromile"
+                  />
+                </figure>
+                <figure class="w-full max-w-[122px] h-[23px]">
+                  <img class="size-full" src="/images/ethos.png" alt="Ethos" />
+                </figure>
+                <figure class="w-full max-w-[170px] h-8">
+                  <img
+                    class="size-full"
+                    src="/images/travelers.png"
+                    alt="Travelers"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-30">
+        <div class="w-full max-w-[1142px] px-4 mx-auto">
+          <div class="w-full max-w-[540px] mx-auto text-center">
+            <h2
+              class="text-[40px] leading-12 text-gray-900 font-bold font-sans-serif"
+            >
+              How is Plans.com Different?
+            </h2>
+            <p
+              class="font-normal text-gray-900 text-xl leading-[30px] w-full max-w-[470px] mx-auto pt-4"
+            >
+              Find the insurance you need and save by shopping from the most
+              trusted insurers.
+            </p>
+          </div>
+          <div
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[110px] justify-between"
+          >
+            <div class="pl-[106px] relative">
+              <figure class="w-[308px] relative -mt-[50px]">
+                <img
+                  src="/public/images/mywallet.png"
+                  alt="My Wallet"
+                  class="size-full"
+                />
+              </figure>
+              <div
+                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute top-16 left-8"
+              >
+                <figure class="size-8 mx-auto">
+                  <img
+                    src="/public/images/svg/input.svg"
+                    alt="Input"
+                    class="size-full"
+                  />
+                </figure>
+                <p
+                  class="text-gray-900 text-sm font-semibold leading-[18px] pt-1.5"
+                >
+                  Import your Policy
+                </p>
+              </div>
+              <div
+                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute bottom-16 -right-12"
+              >
+                <figure class="size-8 mx-auto">
+                  <img
+                    src="/public/images/svg/track.svg"
+                    alt="Track"
+                    class="size-full"
+                  />
+                </figure>
+                <p
+                  class="text-gray-900 text-sm font-semibold leading-[18px] pt-1.5"
+                >
+                  Track Claim Status
+                </p>
+              </div>
+            </div>
+            <div class="py-[65px] pr-12 w-full max-w-[580px]">
+              <h3
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+              >
+                Insurance Wallet
+              </h3>
+              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
+                Our insurance wallet technology lets you buy, manage and renew
+                your insurance policies easily.
+              </p>
+              <div class="flex gap-x-8">
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Buy a Policy
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Manage Policy
+                  </li>
+                </ul>
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Claim Updates
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Renew
+                  </li>
+                </ul>
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Bundling
+                  </li>
+                </ul>
+              </div>
 
-    <main class="mx-auto max-w-5xl px-4 py-16">
-      <section class="mb-16">
-        <h1 class="text-4xl/tight font-bold tracking-tight text-green-900">
-          Ship fast with <span class="text-[--color-brand]">Tailwind v4</span> +
-          Vite ⚡️
-        </h1>
-        <p class="mt-3 text-zinc-600 max-w-prose">
-          This is a minimal vanilla HTML template wired to Tailwind v4 via the
-          official Vite plugin. Edit <code>src/style.css</code> and start
-          composing utilities immediately.
-        </p>
+              <a
+                href="#"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+              >
+                Learn More
+                <img
+                  src="/images/svg/right-orange-arrow.svg"
+                  class="group-hover:translate-x-1 transition-all ease-in-out delay-100"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[50px] justify-between"
+          >
+            <div class="py-[65px] pl-14 w-full max-w-[470px]">
+              <h3
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+              >
+                Coverage Profile
+              </h3>
+              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
+                Your Coverage Profile gives you a clear view of all your
+                insurance in one place.
+              </p>
+              <div class="flex gap-x-8">
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Coverage Details
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Easy to Track
+                  </li>
+                </ul>
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Highlight Gaps
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Quick Snapshot
+                  </li>
+                </ul>
+              </div>
 
-        <div class="mt-8 flex flex-wrap gap-3">
-          <button class="btn btn-brand">Primary</button>
-          <button class="btn">Neutral</button>
+              <a
+                href="#"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+              >
+                Learn More
+                <img
+                  src="/images/svg/right-orange-arrow.svg"
+                  class="group-hover:translate-x-1 transition-all ease-in-out delay-100"
+                />
+              </a>
+            </div>
+            <div class="relative">
+              <figure class="w-[530px] relative -mt-[50px]">
+                <img
+                  src="/public/images/coverage-profile.png"
+                  alt="Coverage Profile"
+                  class="size-full"
+                />
+              </figure>
+              <figure
+                class="w-[190px] absolute left-0 bottom-4 rounded-xl overflow-hidden shadow-2xs"
+              >
+                <img
+                  src="/public/images/coverage-details.png"
+                  alt="Coverage Details"
+                  class="size-full"
+                />
+              </figure>
+              <figure
+                class="w-[154px] absolute top-4 right-4 rounded-xl overflow-hidden shadow-2xs"
+              >
+                <img
+                  src="/public/images/coverage-score.png"
+                  alt="Coverage Score"
+                  class="size-full"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[110px] justify-between"
+          >
+            <div class="pl-10 relative">
+              <figure
+                class="w-[420px] relative -mt-6 rounded-xl shadow-xs overflow-hidden"
+              >
+                <img
+                  src="/public/images/search-non-medical.png"
+                  alt="Search"
+                  class="size-full"
+                />
+              </figure>
+              <figure
+                class="w-[248px] rounded-xl shadow-xs overflow-hidden ml-9 mt-6"
+              >
+                <img
+                  src="/public/images/suggestion-for-you.png"
+                  alt="Suggestion"
+                  class="size-full"
+                />
+              </figure>
+              <figure
+                class="w-[192px] rounded-xl shadow-xs overflow-hidden -mt-16 ml-auto"
+              >
+                <img
+                  src="/public/images/search-details.png"
+                  alt="Search Details"
+                  class="size-full"
+                />
+              </figure>
+            </div>
+            <div class="py-[65px] pr-12 w-full max-w-[580px]">
+              <h3
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+              >
+                Smart Search
+              </h3>
+              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
+                No more endless browsing. Smart Search matches you with the best
+                plans for your needs.
+              </p>
+              <div class="flex gap-x-8">
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Quick Plans
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Find Providers
+                  </li>
+                </ul>
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Easy Compare
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Smart Match
+                  </li>
+                </ul>
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Save Time
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="#"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+              >
+                Learn More
+                <img
+                  src="/images/svg/right-orange-arrow.svg"
+                  class="group-hover:translate-x-1 transition-all ease-in-out delay-100"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[50px] justify-between"
+          >
+            <div class="py-[65px] pl-14 w-full max-w-[500px]">
+              <h3
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+              >
+                Expert Support
+              </h3>
+              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
+                No more confusion with insurance. Our experts guide you every
+                step of the way.
+              </p>
+              <div class="flex gap-x-8">
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Get Help
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Clear Answers
+                  </li>
+                </ul>
+                <ul class="pt-8 flex flex-col gap-y-4">
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Smart Choices
+                  </li>
+                  <li
+                    class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
+                  >
+                    <div
+                      class="px-[1.5] py-[7px] bg-orange-200 rounded-full size-5 flex items-center justify-center"
+                    >
+                      <figure class="w-2 h-1.5">
+                        <img
+                          src="/public/images/svg/icon-tick.svg"
+                          alt="Tick"
+                          class="size-full"
+                        />
+                      </figure>
+                    </div>
+                    Always Available
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="#"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+              >
+                Learn More
+                <img
+                  src="/images/svg/right-orange-arrow.svg"
+                  class="group-hover:translate-x-1 transition-all ease-in-out delay-100"
+                />
+              </a>
+            </div>
+            <div class="relative">
+              <figure class="w-[530px] relative -mt-[50px]">
+                <img
+                  src="/public/images/coverage-profile.png"
+                  alt="Coverage Profile"
+                  class="size-full"
+                />
+              </figure>
+              <figure
+                class="w-[190px] absolute left-0 bottom-4 rounded-xl overflow-hidden shadow-2xs"
+              >
+                <img
+                  src="/public/images/coverage-details.png"
+                  alt="Coverage Details"
+                  class="size-full"
+                />
+              </figure>
+              <figure
+                class="w-[154px] absolute top-4 right-4 rounded-xl overflow-hidden shadow-2xs"
+              >
+                <img
+                  src="/public/images/coverage-score.png"
+                  alt="Coverage Score"
+                  class="size-full"
+                />
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="features" class="grid gap-6 sm:grid-cols-2">
-        <article class="rounded-2xl border p-5">
-          <h3 class="font-semibold">Instant HMR</h3>
-          <p class="mt-1 text-sm text-zinc-600">
-            Vite dev server with lightning-fast updates.
-          </p>
-        </article>
-        <article class="rounded-2xl border p-5">
-          <h3 class="font-semibold">CSS-first config</h3>
-          <p class="mt-1 text-sm text-zinc-600">
-            Use <code>@theme</code> to define tokens in CSS.
-          </p>
-        </article>
+      <section class="py-30 bg-gray-100">
+        <div class="w-full max-w-[1142px] px-4 mx-auto flex flex-col gap-y-30">
+          <div class="w-full max-w-[836px] flex gap-x-12 mx-auto items-center">
+            <div class="flex flex-col gap-[30px]">
+              <div class="flex gap-x-[30px]">
+                <div class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8">
+                  <figure class="w-full max-w-16">
+                    <img
+                      src="/images/svg/bag.svg"
+                      alt="bag"
+                      class="size-full"
+                    />
+                  </figure>
+                  <h2
+                    class="font-bold leading-[48px] text-[40px] text-orange-100 pt-6"
+                  >
+                    30K+
+                  </h2>
+                  <p class="text-xl font-medium leading-[32px] text-gray-900">
+                    Shoppers Served
+                  </p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8">
+                  <figure class="w-full max-w-16">
+                    <img
+                      src="/images/svg/todo.svg"
+                      alt="Todo"
+                      class="size-full"
+                    />
+                  </figure>
+                  <h2
+                    class="font-bold leading-[48px] text-[40px] text-orange-100 pt-6"
+                  >
+                    $90K
+                  </h2>
+                  <p class="text-xl font-medium leading-[32px] text-gray-900">
+                    Coverage Issued
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8 flex justify-between"
+              >
+                <div>
+                  <h2
+                    class="font-bold leading-[48px] text-[40px] text-orange-100"
+                  >
+                    24/7
+                  </h2>
+                  <p class="text-xl font-medium leading-[32px] text-gray-900">
+                    Expert Assistance
+                  </p>
+                </div>
+                <figure class="w-full max-w-16">
+                  <img
+                    src="/images/svg/business-agent.svg"
+                    alt="Business Agent"
+                    class="size-full"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="w-full max-w-[326px]">
+              <h2
+                class="font-bold leading-[48px] text-[40px] text-gray-900 font-sans-serif"
+              >
+                Ready to Talk? Our Agents are Here to Help.
+              </h2>
+              <p
+                class="text-xl font-medium leading-[32px] text-gray-900 pt-[30px]"
+              >
+                Plans provides free quotes tailored to your needs with support
+                from licensed agents, helping you get insurance coverage fast so
+                you can get on with life.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white rounded-3xl flex overflow-hidden">
+            <div class="pl-10 pr-8 py-[76px] w-1/2">
+              <h2
+                class="font-bold leading-[48px] text-[40px] text-gray-900 w-full max-w-[350px] font-sans-serif"
+              >
+                Finished Scrolling? Start Saving
+              </h2>
+              <p class="text-xl font-normal leading-[32px] text-gray-900 pt-5">
+                Find the insurance you need and save by shopping from the most
+                trusted insurers.
+              </p>
+              <a
+                href="#"
+                class="mt-5 inline-flex px-5 py-3 bg-orange-100 rounded-lg text-white font-medium text-lg leading-6 item-center gap-x-1 group"
+              >
+                Get a quote
+                <img
+                  src="/images/svg/arrow-right.svg"
+                  class="group-hover:translate-x-1 transition-all ease-in-out delay-100"
+                />
+              </a>
+            </div>
+            <div
+              class="w-1/2 pt-10 pl-25 relative after:w-[315px] after:h-[162px] after:absolute after:-right-[106px] after:content-[''] after:bg-[image:var(--image-banner-right)] after:bg-contain after:bg-no-repeat after:top-0 before:absolute before:-left-[-10px] before:content-[''] before:bg-[image:var(--image-banner-left)] before:bg-contain before:bg-no-repeat before:bottom-0 before:w-[315px] before:h-[162px]"
+            >
+              <div class="relative w-full max-w-[282px]">
+                <figure class="w-full max-w-[282px] z-10 relative">
+                  <img
+                    src="/images/savings-screens.png"
+                    alt="Savings Screens"
+                  />
+                </figure>
+                <div
+                  class="p-3 rounded-lg border border-blue-100 inline-flex absolute top-16 -left-18 z-20 bg-white"
+                >
+                  <figure class="w-full max-w-[126px]">
+                    <img
+                      src="/images/progressive.png"
+                      alt="Progressive"
+                      class="size-full"
+                    />
+                  </figure>
+                </div>
+                <div
+                  class="p-3 rounded-lg border border-red-100 inline-flex absolute bottom-10 -right-16 z-20 bg-white"
+                >
+                  <figure class="w-full max-w-[110px]">
+                    <img
+                      src="/images/statefarm.png"
+                      alt="Statefarm"
+                      class="size-full"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <section class="py-30 bg-white">
+        <div class="w-full max-w-[1142px] px-4 mx-auto flex gap-x-20">
+          <div class="w-full max-w-[350px]">
+            <h1
+              class="font-bold leading-[48px] text-[40px] text-gray-900 tracking-tighter pb-7 font-sans-serif"
+            >
+              Frequently Asked Questions
+            </h1>
+            <div
+              class="py-8 px-[45px] shadow-2xs rounded-3xl flex flex-col items-center"
+            >
+              <figure class="w-full max-w-12">
+                <img
+                  src="/images/svg/headset.svg"
+                  alt="Headset"
+                  class="size-full"
+                />
+              </figure>
+              <h5
+                class="font-bold leading-6 text-base text-gray-900 tracking-[-0.16px] pb-2 pt-4"
+              >
+                You have different questions?
+              </h5>
+              <p
+                class="text-center font-normal text-gray-900 text-sm leading-6 pb-4"
+              >
+                Our team will answer all your questions. We ensure a quick
+                response.
+              </p>
+              <a
+                href="#"
+                class="bg-orange-200 rounded-lg px-4 py-2 text-white text-xs font-semibold leading-4 hover:bg-orange-100 transition-all ease-in-out delay-100 duration-100"
+                >Contact Team</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="max-w-2xl mx-auto divide-y divide-gray-200">
+              <div class="accordion-item py-8">
+                <button
+                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                >
+                  What is Plans?
+                  <figure
+                    class="size-6 accordion-icon transition-transform duration-300 rotate-180"
+                  >
+                    <img
+                      src="/images/svg/down-icon.svg"
+                      alt="Down Icon"
+                      class="size-full"
+                    />
+                  </figure>
+                </button>
+                <div
+                  class="accordion-content grid grid-rows-[1fr] overflow-hidden transition-[grid-template-rows] duration-300 open"
+                >
+                  <div
+                    class="overflow-hidden text-gray-900 text-base font-normal leading-6"
+                  >
+                    Plans is a digital insurance agent that provides real-time
+                    quotes from 100+ insurers including GEICO, AllState, and
+                    Progressive, enabling shoppers to compare policies and save
+                    up to $717.
+                  </div>
+                </div>
+              </div>
 
-      <section id="get-started" class="mt-16">
-        <pre class="rounded-xl border bg-zinc-50 p-4 text-sm overflow-x-auto">
-npm install
-npm run dev
-        </pre>
+              <div class="accordion-item py-8">
+                <button
+                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                >
+                  How does Plans works?
+                  <figure
+                    class="size-6 accordion-icon transition-transform duration-300"
+                  >
+                    <img
+                      src="/images/svg/down-icon.svg"
+                      alt="Down Icon"
+                      class="size-full"
+                    />
+                  </figure>
+                </button>
+                <div
+                  class="accordion-content grid grid-rows-[0fr] overflow-hidden transition-[grid-template-rows] duration-300"
+                >
+                  <div
+                    class="overflow-hidden text-gray-900 text-base font-normal leading-6"
+                  >
+                    Plans is a digital insurance agent that provides real-time
+                    quotes from 100+ insurers including GEICO, AllState, and
+                    Progressive, enabling shoppers to compare policies and save
+                    up to $717.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item py-8">
+                <button
+                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                >
+                  Is my personal information protected and secure with Plans?
+                  <figure
+                    class="size-6 accordion-icon transition-transform duration-300"
+                  >
+                    <img
+                      src="/images/svg/down-icon.svg"
+                      alt="Down Icon"
+                      class="size-full"
+                    />
+                  </figure>
+                </button>
+                <div
+                  class="accordion-content grid grid-rows-[0fr] overflow-hidden transition-[grid-template-rows] duration-300"
+                >
+                  <div
+                    class="overflow-hidden text-gray-900 text-base font-normal leading-6"
+                  >
+                    Plans is a digital insurance agent that provides real-time
+                    quotes from 100+ insurers including GEICO, AllState, and
+                    Progressive, enabling shoppers to compare policies and save
+                    up to $717.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item py-8">
+                <button
+                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                >
+                  How does Insurify make money?
+                  <figure
+                    class="size-6 accordion-icon transition-transform duration-300"
+                  >
+                    <img
+                      src="/images/svg/down-icon.svg"
+                      alt="Down Icon"
+                      class="size-full"
+                    />
+                  </figure>
+                </button>
+                <div
+                  class="accordion-content grid grid-rows-[0fr] overflow-hidden transition-[grid-template-rows] duration-300"
+                >
+                  <div
+                    class="overflow-hidden text-gray-900 text-base font-normal leading-6"
+                  >
+                    Plans is a digital insurance agent that provides real-time
+                    quotes from 100+ insurers including GEICO, AllState, and
+                    Progressive, enabling shoppers to compare policies and save
+                    up to $717.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item py-8">
+                <button
+                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                >
+                  Which kinds of insurance policies can I buy through Plans?
+                  <figure
+                    class="size-6 accordion-icon transition-transform duration-300"
+                  >
+                    <img
+                      src="/images/svg/down-icon.svg"
+                      alt="Down Icon"
+                      class="size-full"
+                    />
+                  </figure>
+                </button>
+                <div
+                  class="accordion-content grid grid-rows-[0fr] overflow-hidden transition-[grid-template-rows] duration-300"
+                >
+                  <div
+                    class="overflow-hidden text-gray-900 text-base font-normal leading-6"
+                  >
+                    Plans is a digital insurance agent that provides real-time
+                    quotes from 100+ insurers including GEICO, AllState, and
+                    Progressive, enabling shoppers to compare policies and save
+                    up to $717.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="bg-gray-900">
+      <div class="w-full max-w-[1142px] px-4 mx-auto">
+        <div class="flex justify-between pb-12 pt-12 border-b border-white/10">
+          <div class="w-full max-w-64">
+            <figure class="w-full max-w-[104px]">
+              <img
+                src="/images/svg/footer-logo.svg"
+                alt="Plans Logo"
+                class="size-full"
+              />
+            </figure>
+            <p class="text-white text-base font-normal leading-6 pt-4">
+              Find the insurance you need and save by shopping from the most
+              trusted insurers.
+            </p>
+          </div>
+          <div class="flex gap-x-20">
+            <div>
+              <h5 class="text-white text-base font-semibold leading-6 pb-4">
+                Products
+              </h5>
+              <ul class="flex flex-col">
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">Life</a>
+                </li>
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">Pet</a>
+                </li>
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">Home</a>
+                </li>
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">Travel</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-white text-base font-semibold leading-6 pb-4">
+                Company
+              </h5>
+              <ul class="flex flex-col">
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">About</a>
+                </li>
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">Partnerships</a>
+                </li>
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">Contact</a>
+                </li>
+                <li
+                  class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+                >
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-white text-base font-semibold leading-6 pb-4">
+                Address
+              </h5>
+              <p class="text-white text-sm font-normal leading-6">
+                119 Nueces Street, Austin, TX 78701
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex py-6 justify-between">
+          <p class="text-white text-base font-normal leading-6">
+            © 2024 Plans.com. All Rights Reserved.
+          </p>
+          <ul class="flex gap-x-8">
+            <li
+              class="text-white text-base font-normal leading-6 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+            >
+              <a href="#">Term of Use</a>
+            </li>
+            <li
+              class="text-white text-base font-normal leading-6 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -1,24 +1,33 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+document.querySelectorAll(".accordion-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+    const content = item.querySelector(".accordion-content");
+    const icon = btn.querySelector(".accordion-icon");
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+    // Close all others (classic accordion)
+    document.querySelectorAll(".accordion-content").forEach((el) => {
+      if (el !== content) {
+        el.classList.remove("grid-rows-[1fr]", "open");
+        el.classList.add("grid-rows-[0fr]");
+        el.previousElementSibling
+          .querySelector(".accordion-icon")
+          ?.classList.remove("rotate-180");
+      }
+    });
 
-setupCounter(document.querySelector('#counter'))
+    // Toggle clicked one
+    const isOpen = content.classList.contains("grid-rows-[1fr]");
+
+    if (isOpen) {
+      // closing
+      content.classList.remove("grid-rows-[1fr]", "open");
+      content.classList.add("grid-rows-[0fr]");
+      icon.classList.remove("rotate-180");
+    } else {
+      // opening
+      content.classList.remove("grid-rows-[0fr]");
+      content.classList.add("grid-rows-[1fr]", "open");
+      icon.classList.add("rotate-180");
+    }
+  });
+});
