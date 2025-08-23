@@ -13,7 +13,7 @@
   <body class="min-h-dvh bg-white antialiased font-sans">
     <header class="site-header py-3.5 fixed w-full top-0 z-[50] bg-white">
       <div
-        class="w-full max-w-[1142px] px-4 mx-auto flex items-center gap-x-24 justify-between"
+        class="w-full max-w-[1142px] px-4 mx-auto flex items-center gap-x-24 justify-between max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full"
       >
         <a href="#" class="-ml-[17px] w-full max-w-27">
           <img src="/images/svg/plans-logo.svg" />
@@ -62,9 +62,11 @@
     <main class="">
       <section class="pt-30 bg-orange-50">
         <div
-          class="w-full max-w-[1142px] px-4 mx-auto flex items-center gap-x-[30px]"
+          class="w-full max-w-[1142px] px-4 mx-auto flex gap-x-[30px] max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full max-lg:flex-wrap"
         >
-          <div class="w-1/2">
+          <div
+            class="w-1/2 max-lg:w-full max-lg:flex max-lg:flex-col max-lg:items-center pt-[75px] max-lg:pt-0"
+          >
             <div
               class="py-[5px] pl-[5px] pr-3 items-center gap-x-2 bg-white rounded-[30px] inline-flex"
             >
@@ -84,14 +86,18 @@
               </p>
             </div>
             <h1
-              class="pt-2 font-bold font-sans-serif text-[56px] leading-[1.0714] tracking-[-0.02em] text-gray-900 font-timeless-serif w-full max-w-[430px]"
+              class="pt-2 font-bold font-sans-serif text-[56px] leading-[1.0714] tracking-[-0.02em] text-gray-900 font-timeless-serif w-full max-w-[430px] max-lg:text-center max-sm:text-[40px] max-sm:w-full max-sm:max-w-[330px] max-md:text-[48px]"
             >
               Compare Quotes. Get Covered.
             </h1>
-            <p class="text-gray-900 text-lg font-medium py-4 leading-6">
+            <p
+              class="text-gray-900 text-lg font-medium py-4 leading-6 max-lg:text-center max-sm:text-base"
+            >
               Compare, Buy & Save on all your insurance needs.
             </p>
-            <div class="flex gap-x-2">
+            <div
+              class="flex gap-x-2 max-lg:w-full max-lg:justify-center max-sm:flex-wrap max-sm:items-center max-sm:gap-y-4"
+            >
               <a
                 href="#"
                 class="bg-white text-center px-2 py-4 rounded-lg shadow-xs w-full max-w-[88px] hover:-translate-y-0.5 transition-all ease-in-out duration-150"
@@ -165,11 +171,11 @@
               </a>
             </div>
           </div>
-          <div class="w-1/2">
+          <div class="w-1/2 max-lg:w-full max-lg:pt-14">
             <!-- <figure>
               <img src="/images/hero.png" alt="" />
             </figure> -->
-            <div class="relative max-w-[497px] ml-auto">
+            <div class="relative max-w-[497px] ml-auto max-lg:mx-auto">
               <figure class="w-full max-w-[497px] ml-auto">
                 <img
                   src="/images/hero-image.png"
@@ -189,13 +195,13 @@
                 </figure>
               </div>
               <div
-                class="bg-white p-4 pb-[18px] rounded-2xl shadow-2xs text-center absolute top-0"
+                class="bg-white p-4 pb-[18px] rounded-2xl shadow-2xs text-center absolute top-0 max-xl:-left-4"
               >
                 <p class="text-gray-900 text-sm font-semibold leading-[18px]">
                   Review Score
                 </p>
                 <h1
-                  class="font-sans text-[40px] leading-none text-gray-900 font-semibold py-1"
+                  class="font-sans text-[40px] leading-none text-gray-900 font-semibold py-1 max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
                 >
                   51
                 </h1>
@@ -205,14 +211,14 @@
                 >
               </div>
               <div
-                class="bg-white p-4 pb-[18px] rounded-2xl shadow-2xs text-center absolute bottom-6 -right-12 w-full max-w-[140px] flex flex-col items-center justify-center"
+                class="bg-white p-4 pb-[18px] rounded-2xl shadow-2xs text-center absolute bottom-6 -right-12 w-full max-w-[140px] flex flex-col items-center justify-center max-xl:-right-8"
               >
                 <div
                   class="size-8 rounded-full bg-green-100 flex items-center justify-center"
                 >
                   <figure class="w-4 h-3">
                     <img
-                      src="/images/svg/tick-iocn.svg"
+                      src="/images/svg/tick-icon.svg"
                       alt="Tick"
                       sizes="size-full"
                     />
@@ -229,11 +235,15 @@
         </div>
       </section>
       <section class="pt-16">
-        <div class="w-full max-w-[1142px] px-4 mx-auto">
+        <div
+          class="w-full max-w-[1142px] px-4 mx-auto max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full"
+        >
           <div
-            class="bg-gray-50 px-12 flex justify-between rounded-3xl overflow-hidden max-h-[280px]"
+            class="bg-gray-50 px-12 flex justify-between rounded-3xl overflow-hidden max-h-[280px] max-lg:px-10 max-md:flex-wrap max-md:max-h-full"
           >
-            <div class="py-[76px] w-full max-w-[480px]">
+            <div
+              class="py-[76px] w-full max-w-[480px] max-lg:py-[50px] max-sm:py-10"
+            >
               <div class="flex items-center gap-x-2">
                 <figure class="size-6">
                   <img
@@ -247,12 +257,14 @@
                 </p>
               </div>
               <h2
-                class="text-[40px] leading-12 text-gray-900 font-bold font-sans-serif pt-2"
+                class="text-[40px] leading-12 text-gray-900 font-bold font-sans-serif pt-2 max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
               >
                 We Protect More than 250K+ Families
               </h2>
             </div>
-            <div class="flex gap-x-12">
+            <div
+              class="flex gap-x-12 max-md:max-h-[280px] max-md:overflow-hidden"
+            >
               <div class="flex flex-col gap-y-14 items-center animate-slide-up">
                 <figure class="w-full max-w-[138px] h-8">
                   <img
@@ -387,38 +399,42 @@
           </div>
         </div>
       </section>
-      <section class="py-30">
-        <div class="w-full max-w-[1142px] px-4 mx-auto">
+      <section class="py-30 max-sm:py-16 max-md:py-24">
+        <div
+          class="w-full max-w-[1142px] px-4 mx-auto max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full"
+        >
           <div class="w-full max-w-[540px] mx-auto text-center">
             <h2
-              class="text-[40px] leading-12 text-gray-900 font-bold font-sans-serif"
+              class="text-[40px] leading-12 text-gray-900 font-bold font-sans-serif max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
             >
               How is Plans.com Different?
             </h2>
             <p
-              class="font-normal text-gray-900 text-xl leading-[30px] w-full max-w-[470px] mx-auto pt-4"
+              class="font-normal text-gray-900 text-xl leading-[30px] w-full max-w-[470px] mx-auto pt-4 max-sm:max-w-full max-sm:pt-2 max-sm:text-base max-sm:leading-6"
             >
               Find the insurance you need and save by shopping from the most
               trusted insurers.
             </p>
           </div>
           <div
-            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[110px] justify-between"
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[110px] justify-between max-xl:gap-x-[30px] max-lg:flex-wrap"
           >
-            <div class="pl-[106px] relative">
-              <figure class="w-[308px] relative -mt-[50px]">
+            <div
+              class="pl-[106px] relative max-xl:pl-10 max-lg:w-full max-lg:max-w-[300px] max-lg:mx-auto max-lg:pl-0"
+            >
+              <figure class="w-[308px] relative -mt-[50px] max-md:w-full">
                 <img
-                  src="/public/images/mywallet.png"
+                  src="/images/mywallet.png"
                   alt="My Wallet"
                   class="size-full"
                 />
               </figure>
               <div
-                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute top-16 left-8"
+                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute top-16 left-8 max-xl:left-4 max-lg:-left-8"
               >
                 <figure class="size-8 mx-auto">
                   <img
-                    src="/public/images/svg/input.svg"
+                    src="/images/svg/input.svg"
                     alt="Input"
                     class="size-full"
                   />
@@ -430,11 +446,11 @@
                 </p>
               </div>
               <div
-                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute bottom-16 -right-12"
+                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute bottom-16 -right-12 max-xl:-right-8 max-xl:bottom-8"
               >
                 <figure class="size-8 mx-auto">
                   <img
-                    src="/public/images/svg/track.svg"
+                    src="/images/svg/track.svg"
                     alt="Track"
                     class="size-full"
                   />
@@ -446,18 +462,24 @@
                 </p>
               </div>
             </div>
-            <div class="py-[65px] pr-12 w-full max-w-[580px]">
+            <div
+              class="py-[65px] pr-12 w-full max-w-[580px] max-xl:px-8 max-lg:w-full max-lg:max-w-full max-lg:py-10 max-sm:p-8"
+            >
               <h3
-                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif max-sm:text-2xl max-sm:leading-8"
               >
                 Insurance Wallet
               </h3>
-              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
+              <p
+                class="text-gray-900 text-xl leading-[30px] font-normal pt-4 max-sm:pt-3 max-sm:text-base max-sm:leading-6"
+              >
                 Our insurance wallet technology lets you buy, manage and renew
                 your insurance policies easily.
               </p>
-              <div class="flex gap-x-8">
-                <ul class="pt-8 flex flex-col gap-y-4">
+              <div class="flex gap-x-8 max-xl:gap-x-4 max-md:flex-wrap">
+                <ul
+                  class="pt-8 flex flex-col gap-y-4 max-md:flex-wrap max-md:pt-4"
+                >
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -466,7 +488,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -482,7 +504,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -491,7 +513,7 @@
                     Manage Policy
                   </li>
                 </ul>
-                <ul class="pt-8 flex flex-col gap-y-4">
+                <ul class="pt-8 flex flex-col gap-y-4 max-md:pt-4">
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -500,7 +522,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -516,7 +538,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -525,7 +547,7 @@
                     Renew
                   </li>
                 </ul>
-                <ul class="pt-8 flex flex-col gap-y-4">
+                <ul class="pt-8 flex flex-col gap-y-4 max-md:pt-4">
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -534,7 +556,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -547,7 +569,7 @@
 
               <a
                 href="#"
-                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs max-sm:mt-6"
               >
                 Learn More
                 <img
@@ -558,20 +580,26 @@
             </div>
           </div>
           <div
-            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[50px] justify-between"
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[50px] justify-between max-xl:gap-x-[30px] max-lg:flex-wrap max-lg:flex-col-reverse"
           >
-            <div class="py-[65px] pl-14 w-full max-w-[470px]">
+            <div
+              class="py-[65px] pl-14 w-full max-w-[470px] max-xl:pl-8 max-lg:max-w-full max-lg:py-10 max-lg:px-8 max-sm:p-8"
+            >
               <h3
-                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif max-sm:text-2xl max-sm:leading-8"
               >
                 Coverage Profile
               </h3>
-              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
+              <p
+                class="text-gray-900 text-xl leading-[30px] font-normal pt-4 max-sm:pt-3 max-sm:text-base max-sm:leading-6"
+              >
                 Your Coverage Profile gives you a clear view of all your
                 insurance in one place.
               </p>
-              <div class="flex gap-x-8">
-                <ul class="pt-8 flex flex-col gap-y-4">
+              <div class="flex gap-x-8 max-xl:gap-x-4 max-md:flex-wrap">
+                <ul
+                  class="pt-8 flex flex-col gap-y-4 max-md:flex-wrap max-md:pt-4"
+                >
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -580,7 +608,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -596,7 +624,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -605,7 +633,9 @@
                     Easy to Track
                   </li>
                 </ul>
-                <ul class="pt-8 flex flex-col gap-y-4">
+                <ul
+                  class="pt-8 flex flex-col gap-y-4 max-md:flex-wrap max-md:pt-4"
+                >
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -614,7 +644,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -630,7 +660,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -643,7 +673,7 @@
 
               <a
                 href="#"
-                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs max-sm:mt-6"
               >
                 Learn More
                 <img
@@ -652,28 +682,32 @@
                 />
               </a>
             </div>
-            <div class="relative">
-              <figure class="w-[530px] relative -mt-[50px]">
+            <div
+              class="relative max-lg:w-[500px] max-lg:mx-auto max-lg:-mt-[50px] max-md:w-full max-md:px-4"
+            >
+              <figure
+                class="w-[580px] relative -mt-[50px] max-xl:w-[470px] max-xl:mt-0 max-xl:-bottom-1 max-xl:relative max-md:w-full"
+              >
                 <img
-                  src="/public/images/coverage-profile.png"
+                  src="/images/coverage-profile.png"
                   alt="Coverage Profile"
                   class="size-full"
                 />
               </figure>
               <figure
-                class="w-[190px] absolute left-0 bottom-4 rounded-xl overflow-hidden shadow-2xs"
+                class="w-[190px] absolute left-0 bottom-4 rounded-xl overflow-hidden shadow-2xs max-lg:bottom-0 max-md:left-4"
               >
                 <img
-                  src="/public/images/coverage-details.png"
+                  src="/images/coverage-details.png"
                   alt="Coverage Details"
                   class="size-full"
                 />
               </figure>
               <figure
-                class="w-[154px] absolute top-4 right-4 rounded-xl overflow-hidden shadow-2xs"
+                class="w-[154px] absolute top-4 right-4 rounded-xl overflow-hidden shadow-2xs max-lg:top-16"
               >
                 <img
-                  src="/public/images/coverage-score.png"
+                  src="/images/coverage-score.png"
                   alt="Coverage Score"
                   class="size-full"
                 />
@@ -681,23 +715,25 @@
             </div>
           </div>
           <div
-            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[110px] justify-between"
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[62x] justify-between max-xl:gap-x-[30px] max-lg:flex-wrap"
           >
-            <div class="pl-10 relative">
+            <div
+              class="pl-10 relative max-xl:pl-8 max-lg:w-full max-lg:max-w-[420px] max-lg:mx-auto max-lg:pl-0"
+            >
               <figure
-                class="w-[420px] relative -mt-6 rounded-xl shadow-xs overflow-hidden"
+                class="w-[420px] relative -mt-6 rounded-xl shadow-xs overflow-hidden max-xl:w-[340px] max-md:w-full"
               >
                 <img
-                  src="/public/images/search-non-medical.png"
+                  src="/images/search-non-medical.png"
                   alt="Search"
                   class="size-full"
                 />
               </figure>
               <figure
-                class="w-[248px] rounded-xl shadow-xs overflow-hidden ml-9 mt-6"
+                class="w-[248px] rounded-xl shadow-xs overflow-hidden ml-9 mt-6 max-xl:w-[220px]"
               >
                 <img
-                  src="/public/images/suggestion-for-you.png"
+                  src="/images/suggestion-for-you.png"
                   alt="Suggestion"
                   class="size-full"
                 />
@@ -706,24 +742,30 @@
                 class="w-[192px] rounded-xl shadow-xs overflow-hidden -mt-16 ml-auto"
               >
                 <img
-                  src="/public/images/search-details.png"
+                  src="/images/search-details.png"
                   alt="Search Details"
                   class="size-full"
                 />
               </figure>
             </div>
-            <div class="py-[65px] pr-12 w-full max-w-[580px]">
+            <div
+              class="py-[65px] pr-12 w-full max-w-[580px] max-xl:pr-6 max-lg:max-w-full max-lg:px-8 max-lg:py-10 max-sm:p-8"
+            >
               <h3
-                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif max-sm:text-2xl max-sm:leading-8"
               >
                 Smart Search
               </h3>
-              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
+              <p
+                class="text-gray-900 text-xl leading-[30px] font-normal pt-4 max-sm:pt-3 max-sm:text-base max-sm:leading-6"
+              >
                 No more endless browsing. Smart Search matches you with the best
                 plans for your needs.
               </p>
-              <div class="flex gap-x-8">
-                <ul class="pt-8 flex flex-col gap-y-4">
+              <div class="flex gap-x-8 max-xl:gap-x-4 max-md:flex-wrap">
+                <ul
+                  class="pt-8 flex flex-col gap-y-4 max-md:flex-wrap max-md:pt-4"
+                >
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -732,7 +774,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -748,7 +790,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -757,7 +799,9 @@
                     Find Providers
                   </li>
                 </ul>
-                <ul class="pt-8 flex flex-col gap-y-4">
+                <ul
+                  class="pt-8 flex flex-col gap-y-4 max-md:flex-wrap max-md:pt-4"
+                >
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -766,7 +810,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -782,7 +826,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -791,7 +835,7 @@
                     Smart Match
                   </li>
                 </ul>
-                <ul class="pt-8 flex flex-col gap-y-4">
+                <ul class="pt-8 flex flex-col gap-y-4 max-md:pt-4">
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -800,7 +844,7 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
@@ -813,7 +857,7 @@
 
               <a
                 href="#"
-                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs max-sm:mt-6"
               >
                 Learn More
                 <img
@@ -824,20 +868,26 @@
             </div>
           </div>
           <div
-            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[50px] justify-between"
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[50px] justify-between max-xl:gap-x-[30px] max-lg:flex-wrap max-lg:flex-col-reverse"
           >
-            <div class="py-[65px] pl-14 w-full max-w-[500px]">
+            <div
+              class="py-[65px] pl-14 w-full max-w-[470px] max-xl:pl-8 max-lg:max-w-full max-lg:py-10 max-lg:px-8 max-sm:p-8"
+            >
               <h3
-                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif"
+                class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif max-sm:text-2xl max-sm:leading-8"
               >
-                Expert Support
+                Coverage Profile
               </h3>
-              <p class="text-gray-900 text-xl leading-[30px] font-normal pt-4">
-                No more confusion with insurance. Our experts guide you every
-                step of the way.
+              <p
+                class="text-gray-900 text-xl leading-[30px] font-normal pt-4 max-sm:pt-3 max-sm:text-base max-sm:leading-6"
+              >
+                Your Coverage Profile gives you a clear view of all your
+                insurance in one place.
               </p>
-              <div class="flex gap-x-8">
-                <ul class="pt-8 flex flex-col gap-y-4">
+              <div class="flex gap-x-8 max-xl:gap-x-4 max-md:flex-wrap">
+                <ul
+                  class="pt-8 flex flex-col gap-y-4 max-md:flex-wrap max-md:pt-4"
+                >
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -846,13 +896,13 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
                       </figure>
                     </div>
-                    Get Help
+                    Coverage Details
                   </li>
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
@@ -862,16 +912,18 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
                       </figure>
                     </div>
-                    Clear Answers
+                    Easy to Track
                   </li>
                 </ul>
-                <ul class="pt-8 flex flex-col gap-y-4">
+                <ul
+                  class="pt-8 flex flex-col gap-y-4 max-md:flex-wrap max-md:pt-4"
+                >
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
                   >
@@ -880,13 +932,13 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
                       </figure>
                     </div>
-                    Smart Choices
+                    Highlight Gaps
                   </li>
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3"
@@ -896,20 +948,20 @@
                     >
                       <figure class="w-2 h-1.5">
                         <img
-                          src="/public/images/svg/icon-tick.svg"
+                          src="/images/svg/icon-tick.svg"
                           alt="Tick"
                           class="size-full"
                         />
                       </figure>
                     </div>
-                    Always Available
+                    Quick Snapshot
                   </li>
                 </ul>
               </div>
 
               <a
                 href="#"
-                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs"
+                class="mt-8 inline-flex px-4 py-2.5 bg-white rounded-lg text-orange-200 font-semibold text-base leading-6 item-center gap-x-1.5 group shadow-xs max-sm:mt-6"
               >
                 Learn More
                 <img
@@ -918,28 +970,32 @@
                 />
               </a>
             </div>
-            <div class="relative">
-              <figure class="w-[530px] relative -mt-[50px]">
+            <div
+              class="relative max-lg:w-[500px] max-lg:mx-auto max-lg:-mt-[50px] max-md:w-full max-md:px-4"
+            >
+              <figure
+                class="w-[580px] relative -mt-[50px] max-xl:w-[470px] max-xl:mt-0 max-xl:-bottom-1 max-xl:relative max-md:w-full"
+              >
                 <img
-                  src="/public/images/coverage-profile.png"
+                  src="/images/coverage-profile.png"
                   alt="Coverage Profile"
                   class="size-full"
                 />
               </figure>
               <figure
-                class="w-[190px] absolute left-0 bottom-4 rounded-xl overflow-hidden shadow-2xs"
+                class="w-[190px] absolute left-0 bottom-4 rounded-xl overflow-hidden shadow-2xs max-lg:bottom-0 max-md:left-4"
               >
                 <img
-                  src="/public/images/coverage-details.png"
+                  src="/images/coverage-details.png"
                   alt="Coverage Details"
                   class="size-full"
                 />
               </figure>
               <figure
-                class="w-[154px] absolute top-4 right-4 rounded-xl overflow-hidden shadow-2xs"
+                class="w-[154px] absolute top-4 right-4 rounded-xl overflow-hidden shadow-2xs max-lg:top-16"
               >
                 <img
-                  src="/public/images/coverage-score.png"
+                  src="/images/coverage-score.png"
                   alt="Coverage Score"
                   class="size-full"
                 />
@@ -949,12 +1005,18 @@
         </div>
       </section>
 
-      <section class="py-30 bg-gray-100">
-        <div class="w-full max-w-[1142px] px-4 mx-auto flex flex-col gap-y-30">
-          <div class="w-full max-w-[836px] flex gap-x-12 mx-auto items-center">
-            <div class="flex flex-col gap-[30px]">
-              <div class="flex gap-x-[30px]">
-                <div class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8">
+      <section class="py-30 bg-gray-100 max-sm:py-16 max-md:py-24">
+        <div
+          class="w-full max-w-[1142px] px-4 mx-auto flex flex-col gap-y-30 max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full max-sm:gap-y-10"
+        >
+          <div
+            class="w-full max-w-[836px] flex gap-x-12 mx-auto items-center max-lg:flex-wrap max-lg:justify-center justify-between max-md:max-w-full"
+          >
+            <div class="flex flex-col gap-[30px] max-sm:gap-6">
+              <div class="flex gap-x-[30px] max-sm:flex-wrap max-sm:gap-6">
+                <div
+                  class="bg-white rounded-3xl shadow-2xs py-6 px-6 w-full max-w-[216px] min-w-[216px] max-sm:max-w-full max-sm:min-w-full max-sm:flex max-sm:flex-row-reverse"
+                >
                   <figure class="w-full max-w-16">
                     <img
                       src="/images/svg/bag.svg"
@@ -962,16 +1024,20 @@
                       class="size-full"
                     />
                   </figure>
-                  <h2
-                    class="font-bold leading-[48px] text-[40px] text-orange-100 pt-6"
-                  >
-                    30K+
-                  </h2>
-                  <p class="text-xl font-medium leading-[32px] text-gray-900">
-                    Shoppers Served
-                  </p>
+                  <div class="max-sm:w-full">
+                    <h2
+                      class="font-bold font-sans leading-[48px] text-[40px] text-orange-100 pt-6 max-sm:pt-0 max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
+                    >
+                      30K+
+                    </h2>
+                    <p class="text-xl font-medium leading-[32px] text-gray-900">
+                      Shoppers Served
+                    </p>
+                  </div>
                 </div>
-                <div class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8">
+                <div
+                  class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8 w-full max-w-[216px] min-w-[216px] max-sm:max-w-full max-sm:min-w-full max-sm:flex max-sm:flex-row-reverse"
+                >
                   <figure class="w-full max-w-16">
                     <img
                       src="/images/svg/todo.svg"
@@ -979,22 +1045,24 @@
                       class="size-full"
                     />
                   </figure>
-                  <h2
-                    class="font-bold leading-[48px] text-[40px] text-orange-100 pt-6"
-                  >
-                    $90K
-                  </h2>
-                  <p class="text-xl font-medium leading-[32px] text-gray-900">
-                    Coverage Issued
-                  </p>
+                  <div class="max-sm:w-full">
+                    <h2
+                      class="font-bold leading-[48px] text-[40px] text-orange-100 pt-6 max-sm:pt-0 max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
+                    >
+                      $90K
+                    </h2>
+                    <p class="text-xl font-medium leading-[32px] text-gray-900">
+                      Coverage Issued
+                    </p>
+                  </div>
                 </div>
               </div>
               <div
-                class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8 flex justify-between"
+                class="bg-white rounded-3xl shadow-2xs py-6 pl-6 pr-8 flex justify-between max-w-[462px] w-full max-sm:max-w-full"
               >
                 <div>
                   <h2
-                    class="font-bold leading-[48px] text-[40px] text-orange-100"
+                    class="font-bold leading-[48px] text-[40px] text-orange-100 max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
                   >
                     24/7
                   </h2>
@@ -1002,7 +1070,7 @@
                     Expert Assistance
                   </p>
                 </div>
-                <figure class="w-full max-w-16">
+                <figure class="w-full max-w-16 ml-2">
                   <img
                     src="/images/svg/business-agent.svg"
                     alt="Business Agent"
@@ -1011,14 +1079,16 @@
                 </figure>
               </div>
             </div>
-            <div class="w-full max-w-[326px]">
+            <div
+              class="w-full max-w-[326px] max-lg:pt-10 max-lg:max-w-[462px] max-sm:max-w-full"
+            >
               <h2
-                class="font-bold leading-[48px] text-[40px] text-gray-900 font-sans-serif"
+                class="font-bold leading-[48px] text-[40px] text-gray-900 font-sans-serif max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
               >
                 Ready to Talk? Our Agents are Here to Help.
               </h2>
               <p
-                class="text-xl font-medium leading-[32px] text-gray-900 pt-[30px]"
+                class="text-xl font-medium leading-[32px] text-gray-900 pt-[30px] max-sm:text-base max-sm:leading-6 max-sm:pt-3"
               >
                 Plans provides free quotes tailored to your needs with support
                 from licensed agents, helping you get insurance coverage fast so
@@ -1026,20 +1096,26 @@
               </p>
             </div>
           </div>
-          <div class="bg-white rounded-3xl flex overflow-hidden">
-            <div class="pl-10 pr-8 py-[76px] w-1/2">
+          <div
+            class="bg-white rounded-3xl flex overflow-hidden max-lg:flex-wrap max-lg:flex-col-reverse"
+          >
+            <div
+              class="pl-10 pr-8 py-[76px] w-1/2 max-lg:w-full max-lg:py-[50px] max-sm:p-8"
+            >
               <h2
-                class="font-bold leading-[48px] text-[40px] text-gray-900 w-full max-w-[350px] font-sans-serif"
+                class="font-bold leading-[48px] text-[40px] text-gray-900 w-full max-w-[350px] font-sans-serif max-sm:text-[28px] max-sm:leading-8 max-md:text-4xl"
               >
                 Finished Scrolling? Start Saving
               </h2>
-              <p class="text-xl font-normal leading-[32px] text-gray-900 pt-5">
+              <p
+                class="text-xl font-normal leading-[32px] text-gray-900 pt-5 max-sm:pt-3 max-sm:text-base max-sm:leading-6"
+              >
                 Find the insurance you need and save by shopping from the most
                 trusted insurers.
               </p>
               <a
                 href="#"
-                class="mt-5 inline-flex px-5 py-3 bg-orange-100 rounded-lg text-white font-medium text-lg leading-6 item-center gap-x-1 group"
+                class="mt-5 inline-flex px-5 py-3 bg-orange-200 rounded-lg text-white font-medium text-lg leading-6 item-center gap-x-1 group"
               >
                 Get a quote
                 <img
@@ -1049,7 +1125,7 @@
               </a>
             </div>
             <div
-              class="w-1/2 pt-10 pl-25 relative after:w-[315px] after:h-[162px] after:absolute after:-right-[106px] after:content-[''] after:bg-[image:var(--image-banner-right)] after:bg-contain after:bg-no-repeat after:top-0 before:absolute before:-left-[-10px] before:content-[''] before:bg-[image:var(--image-banner-left)] before:bg-contain before:bg-no-repeat before:bottom-0 before:w-[315px] before:h-[162px]"
+              class="w-1/2 pt-10 pl-25 relative after:w-[315px] after:h-[162px] after:absolute after:-right-[106px] after:content-[''] after:bg-[image:var(--image-banner-right)] after:bg-contain after:bg-no-repeat after:top-0 before:absolute before:-left-[-10px] before:content-[''] before:bg-[image:var(--image-banner-left)] before:bg-contain before:bg-no-repeat before:bottom-0 before:w-[315px] before:h-[162px] max-xl:after:-right-[180px] max-lg:e-full max-lg:mx-auto max-lg:pl-0 max-lg:before:-left-[92px]"
             >
               <div class="relative w-full max-w-[282px]">
                 <figure class="w-full max-w-[282px] z-10 relative">
@@ -1085,11 +1161,13 @@
           </div>
         </div>
       </section>
-      <section class="py-30 bg-white">
-        <div class="w-full max-w-[1142px] px-4 mx-auto flex gap-x-20">
-          <div class="w-full max-w-[350px]">
+      <section class="py-30 bg-white max-sm:py-16 max-md:py-24">
+        <div
+          class="w-full max-w-[1142px] px-4 mx-auto flex gap-x-20 max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full max-lg:flex-wrap"
+        >
+          <div class="w-full max-w-[350px] max-lg:mx-auto max-sm:max-w-full">
             <h1
-              class="font-bold leading-[48px] text-[40px] text-gray-900 tracking-tighter pb-7 font-sans-serif"
+              class="font-bold leading-[48px] text-[40px] text-gray-900 tracking-tighter pb-7 font-sans-serif max-sm:text-[28px] max-sm:leading-8 max-lg:text-center max-md:text-4xl"
             >
               Frequently Asked Questions
             </h1>
@@ -1121,11 +1199,13 @@
               >
             </div>
           </div>
-          <div>
-            <div class="max-w-2xl mx-auto divide-y divide-gray-200">
-              <div class="accordion-item py-8">
+          <div class="max-lg:pt-6">
+            <div
+              class="max-w-2xl mx-auto divide-y divide-gray-200 max-lg:max-w-full"
+            >
+              <div class="accordion-item py-8 max-sm:py-6">
                 <button
-                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                  class="accordion-btn flex w-full items-start justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
                 >
                   What is Plans?
                   <figure
@@ -1152,9 +1232,9 @@
                 </div>
               </div>
 
-              <div class="accordion-item py-8">
+              <div class="accordion-item py-8 max-sm:py-6">
                 <button
-                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                  class="accordion-btn flex w-full items-start justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
                 >
                   How does Plans works?
                   <figure
@@ -1180,9 +1260,9 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item py-8">
+              <div class="accordion-item py-8 max-sm:py-6">
                 <button
-                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                  class="accordion-btn flex w-full items-start justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
                 >
                   Is my personal information protected and secure with Plans?
                   <figure
@@ -1208,9 +1288,9 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item py-8">
+              <div class="accordion-item py-8 max-sm:py-6">
                 <button
-                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                  class="accordion-btn flex w-full items-start justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
                 >
                   How does Insurify make money?
                   <figure
@@ -1236,9 +1316,9 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item py-8">
+              <div class="accordion-item py-8 max-sm:py-6">
                 <button
-                  class="accordion-btn flex w-full items-center justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
+                  class="accordion-btn flex w-full items-start justify-between text-left leading-6 text-gray-900 text-xl font-bold tracking-[-0.2px]"
                 >
                   Which kinds of insurance policies can I buy through Plans?
                   <figure
@@ -1270,8 +1350,12 @@
       </section>
     </main>
     <footer class="bg-gray-900">
-      <div class="w-full max-w-[1142px] px-4 mx-auto">
-        <div class="flex justify-between pb-12 pt-12 border-b border-white/10">
+      <div
+        class="w-full max-w-[1142px] px-4 mx-auto max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full"
+      >
+        <div
+          class="flex justify-between pb-12 pt-12 border-b border-white/10 gap-x-10 max-md:flex-wrap max-md:gap-y-8"
+        >
           <div class="w-full max-w-64">
             <figure class="w-full max-w-[104px]">
               <img
@@ -1285,7 +1369,9 @@
               trusted insurers.
             </p>
           </div>
-          <div class="flex gap-x-20">
+          <div
+            class="flex gap-x-20 max-lg:gap-x-10 max-md:w-full max-md:justify-between"
+          >
             <div>
               <h5 class="text-white text-base font-semibold leading-6 pb-4">
                 Products
@@ -1340,7 +1426,7 @@
                 </li>
               </ul>
             </div>
-            <div>
+            <div class="max-lg:max-w-[150px] max-lg:w-full">
               <h5 class="text-white text-base font-semibold leading-6 pb-4">
                 Address
               </h5>
@@ -1350,7 +1436,9 @@
             </div>
           </div>
         </div>
-        <div class="flex py-6 justify-between">
+        <div
+          class="flex py-6 justify-between max-md:flex-wrap max-md:flex-col-reverse max-md:gap-y-4 max-md:items-center"
+        >
           <p class="text-white text-base font-normal leading-6">
             © 2024 Plans.com. All Rights Reserved.
           </p>
