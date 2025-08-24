@@ -20,6 +20,8 @@
 /* (Optional) v4 CSS-first customization using @theme */
 @theme {
   /* Break Points */
+  --breakpoint-xss: 321px;
+  --breakpoint-xs: 426px;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -62,6 +64,9 @@
 .accordion-content.open {
   @apply pt-4 pr-12;
 }
+.footer-list .accordion-content.open {
+  @apply p-0;
+}
 
 .icon-list-col1 {
   -webkit-animation: scroll 35s linear 0s infinite;
@@ -87,5 +92,95 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header .navbar-toggler {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    width: 22px;
+  }
+  .navbar-home .navbar-toggler .icon-bar,
+  .navbar-home .navbar-toggler.collapsed .icon-bar {
+    background-color: red;
+  }
+  .navbar-toggler .icon-bar,
+  .navbar-toggler.collapsed .icon-bar {
+    background-color: #111827;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    margin-bottom: 4px;
+    width: 22px;
+  }
+  .navbar-toggler.collapsed .icon-bar {
+    transform: rotate(0);
+    transition: all 0.25s;
+  }
+  .navbar-toggler .icon-bar {
+    transition: all 0.3s ease-in;
+    transition-delay: 0.25s;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+  }
+
+  .site-header {
+    flex-wrap: wrap;
+  }
+  .navbar-toggler .icon-bar {
+    transition: all 0.3s ease-in;
+    transition-delay: 0.25s;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+  }
+  .top-bar {
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: rotate(45deg);
+    transform-origin: 10% 10% 0;
+  }
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    transform: translate(13%);
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: rotate(-45deg);
+    transform-origin: 10% 90% 0;
+  }
+  .site-header.menu-opened {
+    height: 100%;
+    transition: all 0.5s ease-out;
+  }
+  .navbar-collapse {
+    opacity: 0;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+  }
+  .navbar-collapse.nav-open {
+    opacity: 1;
+    padding-left: 0;
+    transform: scale(1);
+    transition-delay: 0.2s;
+    width: 100%;
+  }
+  .site-header {
+    height: 68px;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
   }
 }
