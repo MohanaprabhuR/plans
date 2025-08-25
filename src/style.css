@@ -2,21 +2,40 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "TimelessSansVF";
-  src: url("/fonts/TimelessSansVF.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "TimelessSans";
+  src: url("/fonts/TimelessSans.woff2") format("truetype");
+  font-weight: 300 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
+  font-family: timeless-sans-fallback;
+  font-display: swap;
+  src: local("Arial");
+  ascent-override: 90.2572%;
+  descent-override: -21.4423%;
+  line-gap-override: 0%;
+  size-adjust: 103.7981%;
+}
+
+@font-face {
   font-family: "TimelessSerif";
-  src: url("/fonts/TimelessSerifv1.5VF.ttf") format("truetype");
-  font-weight: 400;
+  src: url("/fonts/TimelessSerif.woff2") format("truetype");
+  font-weight: 300 700;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "timeless-serif-fallback";
+  font-display: swap;
+  src: local("Arial");
+  ascent-override: 93.6078%;
+  descent-override: -22.2383%;
+  line-gap-override: 0%;
+  size-adjust: 100.0828%;
+}
 :root {
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 8);
@@ -35,13 +54,15 @@
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
 
-  --font-sans: "TimelessSansVF", sans-serif;
-  --font-sans-serif: "TimelessSerif", sans-serif;
+  --font-sans: "TimelessSans", timeless-sans-fallback;
+  --font-sans-serif: "TimelessSerif", timeless-serif-fallback;
 
   --font-var-400: "wght" 400, "ital" 0, "STYL" 100;
   --font-var-500: "wght" 500, "ital" 0, "STYL" 100;
   --font-var-600: "wght" 600, "ital" 0, "STYL" 100;
   --font-var-700: "wght" 700, "ital" 0, "STYL" 100;
+  --font-var-400-serif: "wght" 400, "ital" 0, "STYL" 0;
+  --font-var-464-serif: "wght" 464, "ital" 0, "STYL" 0;
   --font-var-500-serif: "wght" 500, "ital" 0, "STYL" 0;
   --font-var-600-serif: "wght" 600, "ital" 0, "STYL" 0;
   --font-var-700-serif: "wght" 700, "ital" 0, "STYL" 0;
