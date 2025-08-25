@@ -35,8 +35,8 @@
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
 
-  --font-sans: "TimelessSansVF";
-  --font-sans-serif: "TimelessSerif";
+  --font-sans: "TimelessSansVF", sans-serif;
+  --font-sans-serif: "TimelessSerif", sans-serif;
 
   --font-var-400: "wght" 400, "ital" 0, "STYL" 100;
   --font-var-500: "wght" 500, "ital" 0, "STYL" 100;
