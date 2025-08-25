@@ -3,8 +3,6 @@ document.querySelectorAll(".accordion-btn").forEach((btn) => {
     const item = btn.parentElement;
     const content = item.querySelector(".accordion-content");
     const icon = btn.querySelector(".accordion-icon");
-
-    // Close all others (classic accordion)
     document.querySelectorAll(".accordion-content").forEach((el) => {
       if (el !== content) {
         el.classList.remove("grid-rows-[1fr]", "open");
@@ -15,16 +13,13 @@ document.querySelectorAll(".accordion-btn").forEach((btn) => {
       }
     });
 
-    // Toggle clicked one
     const isOpen = content.classList.contains("grid-rows-[1fr]");
 
     if (isOpen) {
-      // closing
       content.classList.remove("grid-rows-[1fr]", "open");
       content.classList.add("grid-rows-[0fr]");
       icon.classList.remove("rotate-180");
     } else {
-      // opening
       content.classList.remove("grid-rows-[0fr]");
       content.classList.add("grid-rows-[1fr]", "open");
       icon.classList.add("rotate-180");
@@ -57,20 +52,15 @@ function navToggle() {
         : "";
     });
   }
-
-  // Remove overflow: hidden on page unload (navigation)
   window.addEventListener("beforeunload", function () {
     body.style.overflow = "";
   });
-
-  // Remove overflow: hidden if the menu is closed when leaving the page
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
       body.style.overflow = "";
     }
   });
 
-  // Handle jump links (anchor tags)
   document.addEventListener("click", function (event) {
     const target = event.target.closest("a");
     if (
