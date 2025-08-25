@@ -95,6 +95,16 @@ navToggle();
 function scrollAnimation() {
   const items = document.querySelectorAll(".animate-item");
 
+  // // If on mobile (screen width <= 768px), just show items immediately
+  // if (window.innerWidth <= 768) {
+  //   items.forEach((item) => {
+  //     item.classList.add("show");
+  //     item.style.transition = "none"; // disable animation
+  //   });
+  //   return;
+  // }
+
+  // Otherwise enable scroll animations
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -113,4 +123,5 @@ function scrollAnimation() {
 
   items.forEach((item) => observer.observe(item));
 }
+
 scrollAnimation();
