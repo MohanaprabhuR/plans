@@ -1,3 +1,5 @@
+//FAQ Section
+
 document.querySelectorAll(".accordion-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const item = btn.parentElement;
@@ -27,6 +29,17 @@ document.querySelectorAll(".accordion-btn").forEach((btn) => {
   });
 });
 
+//Add Class name to page scroll
+const header = document.querySelector(".site-header");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+//Toggle Menu
 document.addEventListener("DOMContentLoaded", () => {
   const navbarToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector(".navbar-collapse");
