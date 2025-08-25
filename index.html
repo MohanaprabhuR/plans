@@ -17,9 +17,12 @@
       >
         <a
           href="#"
-          class="-ml-[17px] w-full max-w-27 max-md:order-0 max-md:ml-0 max-sm:max-w-20"
+          class="-ml-[17px] w-full max-w-27 max-md:order-0 max-md:ml-0 max-sm:max-w-20 max-sm:hidden"
         >
           <img src="/images/svg/plans-logo.svg" />
+        </a>
+        <a href="#" class="hidden max-sm:block size-8">
+          <img src="/images/svg/plans-mobile-logo.svg" />
         </a>
         <div class="navbar-collapse max-md:order-2 max-md:pt-6">
           <ul
@@ -67,7 +70,7 @@
         >
           <a
             href="#"
-            class="py-2 px-6 font-semibold text-orange-100 border border-orange-100 rounded-lg text-base transition-all ease-in-out delay-100 max-md:px-4 max-sm:p-3 leading-none"
+            class="py-2 px-6 font-semibold text-orange-100 border border-orange-100 rounded-lg text-base transition-all ease-in-out delay-100 max-md:px-4 max-sm:px-3 max-sm:py-2 leading-none"
             >Log In</a
           >
 
@@ -88,7 +91,7 @@
       </div>
     </header>
     <main class="">
-      <section class="pt-30 bg-orange-50">
+      <section class="pt-30 bg-orange-50 max-sm:pt-24">
         <div
           class="w-full max-w-[1142px] px-4 mx-auto flex gap-x-[30px] max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full max-lg:flex-wrap"
         >
@@ -204,7 +207,7 @@
               <img src="/images/hero.png" alt="" />
             </figure>
             <div
-              class="relative max-w-[497px] ml-auto max-lg:mx-auto max-sm:hidden"
+              class="relative max-w-[497px] ml-auto w-full max-lg:mx-auto max-sm:hidden"
             >
               <figure class="w-full max-w-[497px] ml-auto">
                 <img
@@ -462,7 +465,7 @@
                 />
               </figure>
               <div
-                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute top-16 left-8 max-xl:left-4 max-lg:-left-8 max-xs:-left-2 max-xss:left-2 max-xss:top-10"
+                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute top-16 left-8 max-xl:left-4 max-lg:-left-8 max-xs:-left-6 max-xss:left-2 max-xss:top-10"
               >
                 <figure class="size-8 mx-auto max-sm:size-6">
                   <img
@@ -478,7 +481,7 @@
                 </p>
               </div>
               <div
-                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute bottom-16 -right-12 max-xl:-right-8 max-xl:bottom-8 max-xs:-right-2 max-xss:right-2"
+                class="bg-white p-2 pb-[18px] rounded-2xl shadow-2xs text-center w-full max-w-[108px] absolute bottom-16 -right-12 max-xl:-right-8 max-xl:bottom-8 max-xs:-right-6 max-xss:right-2"
               >
                 <figure class="size-8 mx-auto max-sm:size-6">
                   <img
@@ -1251,7 +1254,7 @@
                 >
                   What is Plans?
                   <figure
-                    class="size-6 accordion-icon transition-transform duration-300 rotate-180"
+                    class="accordion-icon transition-transform duration-300 w-full max-w-6 rotate-180"
                   >
                     <img
                       src="/images/svg/down-icon.svg"
@@ -1280,7 +1283,7 @@
                 >
                   How does Plans works?
                   <figure
-                    class="size-6 accordion-icon transition-transform duration-300"
+                    class="accordion-icon transition-transform duration-300 w-full max-w-6"
                   >
                     <img
                       src="/images/svg/down-icon.svg"
@@ -1308,7 +1311,7 @@
                 >
                   Is my personal information protected and secure with Plans?
                   <figure
-                    class="size-6 accordion-icon transition-transform duration-300"
+                    class="accordion-icon transition-transform duration-300 w-full max-w-6"
                   >
                     <img
                       src="/images/svg/down-icon.svg"
@@ -1336,7 +1339,7 @@
                 >
                   How does Insurify make money?
                   <figure
-                    class="size-6 accordion-icon transition-transform duration-300"
+                    class="accordion-icon transition-transform duration-300 w-full max-w-6"
                   >
                     <img
                       src="/images/svg/down-icon.svg"
@@ -1364,7 +1367,7 @@
                 >
                   Which kinds of insurance policies can I buy through Plans?
                   <figure
-                    class="size-6 accordion-icon transition-transform duration-300"
+                    class="accordion-icon transition-transform duration-300 w-full max-w-6"
                   >
                     <img
                       src="/images/svg/down-icon.svg"
@@ -1399,41 +1402,29 @@
           class="flex justify-between pb-12 pt-12 border-b border-white/10 gap-x-10 max-md:flex-wrap max-md:gap-y-8"
         >
           <div class="w-full max-w-64">
-            <figure class="w-full max-w-[104px]">
+            <figure class="w-full max-w-[104px] max-sm:max-w-[84px]">
               <img
                 src="/images/svg/footer-logo.svg"
                 alt="Plans Logo"
                 class="size-full"
               />
             </figure>
-            <p class="text-white text-base font-normal leading-6 pt-4">
+            <p
+              class="text-white text-base font-normal leading-6 pt-4 max-sm:text-sm"
+            >
               Find the insurance you need and save by shopping from the most
               trusted insurers.
             </p>
           </div>
           <div
-            class="flex gap-x-20 max-lg:gap-x-10 max-md:w-full max-md:justify-between max-sm:flex-warp max-sm:flex-col max-sm:gap-y-3"
+            class="flex gap-x-20 max-lg:gap-x-10 max-md:w-full max-md:justify-between max-sm:flex-wrap max-sm:gap-y-3"
           >
-            <div
-              class="max-sm:w-full footer-list max-sm:mb-3 max-sm:border-b max-sm:border-gray-100"
-            >
-              <h5
-                class="text-white text-base font-semibold leading-6 pb-3 accordion-header flex justify-between items-center"
-              >
+            <div class="max-sm:w-[40%]">
+              <h5 class="text-white text-base font-semibold leading-6">
                 Products
-                <figure
-                  class="size-4 accordion-icon transition-transform duration-300 accordion-icon hidden max-sm:block"
-                >
-                  <img
-                    src="/images/svg/down-white-icon.svg"
-                    alt="Down Icon"
-                    class="size-full"
-                    color="text-red-900"
-                  />
-                </figure>
               </h5>
               <ul
-                class="flex flex-col max-sm:h-0 max-sm:opacity-0 overflow-hidden transition-all duration-500 ease-in-out accordion-content"
+                class="flex flex-col overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <li
                   class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150 max-sm:pb-2"
@@ -1457,26 +1448,12 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="max-sm:w-full footer-list max-sm:mb-3 max-sm:border-b max-sm:border-gray-100"
-            >
-              <h5
-                class="text-white text-base font-semibold leading-6 pb-3 accordion-header flex justify-between items-center"
-              >
+            <div class="max-sm:w-[40%]">
+              <h5 class="text-white text-base font-semibold leading-6 pb-3">
                 Company
-                <figure
-                  class="size-4 accordion-icon transition-transform duration-300 accordion-icon hidden max-sm:block"
-                >
-                  <img
-                    src="/images/svg/down-white-icon.svg"
-                    alt="Down Icon"
-                    class="size-full"
-                    color="text-red-900"
-                  />
-                </figure>
               </h5>
               <ul
-                class="flex flex-col max-sm:h-0 max-sm:opacity-0 overflow-hidden transition-all duration-500 ease-in-out accordion-content accordion-content"
+                class="flex flex-col overflow-hidden transition-all duration-500 ease-in-out"
               >
                 <li
                   class="text-white text-sm font-normal leading-8 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150 max-sm:pb-2"
@@ -1500,7 +1477,7 @@
                 </li>
               </ul>
             </div>
-            <div class="max-lg:max-w-[150px] max-lg:w-full max-sm:w-full">
+            <div class="max-lg:max-w-[150px] max-sm:max-w-full">
               <h5 class="text-white text-base font-semibold leading-6 pb-4">
                 Address
               </h5>
@@ -1511,19 +1488,19 @@
           </div>
         </div>
         <div
-          class="flex py-6 justify-between max-md:flex-wrap max-md:flex-col-reverse max-md:gap-y-4 max-md:items-center"
+          class="flex py-6 justify-between max-md:flex-wrap max-md:flex-col-reverse max-md:gap-y-4"
         >
-          <p class="text-white text-base font-normal leading-6">
+          <p class="text-white text-base font-normal leading-6 max-sm:text-sm">
             © 2024 Plans.com. All Rights Reserved.
           </p>
-          <ul class="flex gap-x-8">
+          <ul class="flex gap-x-8 max-sm:w-full max-sm:justify-between">
             <li
-              class="text-white text-base font-normal leading-6 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+              class="text-white text-base font-normal leading-6 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150 max-sm:text-sm"
             >
               <a href="#">Term of Use</a>
             </li>
             <li
-              class="text-white text-base font-normal leading-6 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150"
+              class="text-white text-base font-normal leading-6 hover:text-orange-100 transition-all ease-in-out duration-150 delay-150 max-sm:text-sm"
             >
               <a href="#">Privacy Policy</a>
             </li>
