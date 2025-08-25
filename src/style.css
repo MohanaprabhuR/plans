@@ -42,6 +42,8 @@
   --font-var-500: "wght" 500, "ital" 0, "STYL" 100;
   --font-var-600: "wght" 600, "ital" 0, "STYL" 100;
   --font-var-700: "wght" 700, "ital" 0, "STYL" 100;
+  --font-var-500-serif: "wght" 500, "ital" 0, "STYL" 0;
+  --font-var-600-serif: "wght" 600, "ital" 0, "STYL" 0;
   --font-var-700-serif: "wght" 700, "ital" 0, "STYL" 0;
 
   /* Colors */
