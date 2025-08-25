@@ -272,7 +272,7 @@
           class="w-full max-w-[1142px] px-4 mx-auto max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full"
         >
           <div
-            class="bg-gray-50 px-12 flex justify-between rounded-3xl overflow-hidden max-h-[280px] max-lg:px-10 max-md:flex-wrap max-md:max-h-full max-sm:rounded-2xl max-sm:px-8 max-xss:px-6"
+            class="bg-gray-50 px-12 flex justify-between rounded-3xl overflow-hidden max-h-[280px] max-lg:px-10 max-md:flex-wrap max-md:max-h-full max-sm:rounded-2xl max-sm:px-8 max-xss:px-6 max-lg:flex-col-reverse max-lg:max-h-full max-lg:items-center"
           >
             <div
               class="py-[76px] w-full max-w-[480px] max-lg:py-[50px] max-sm:py-8"
@@ -296,142 +296,167 @@
               </h2>
             </div>
             <div
-              class="flex gap-x-12 max-md:max-h-[280px] max-md:overflow-hidden"
+              class="flex gap-x-12 max-lg:max-h-[280px] max-md:overflow-hidden wrapper wrapper--vertical max-sm:max-h-[200px]"
             >
-              <div class="flex flex-col gap-y-14 items-center animate-slide-up">
-                <figure class="w-full max-w-[138px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/allstate.png"
-                    alt="All State"
-                  />
-                </figure>
-                <figure class="w-full max-w-[170px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/farmers.png"
-                    alt="Farmers"
-                  />
-                </figure>
-                <figure class="w-full max-w-[170px] h-[22px]">
-                  <img
-                    class="size-full"
-                    src="/images/progressive.png"
-                    alt="Progressive"
-                  />
-                </figure>
-                <figure class="w-full max-w-[122px] h-[22px]">
-                  <img class="size-full" src="/images/geico.png" alt="Geico" />
-                </figure>
-                <figure class="w-full max-w-[166px] h-[24px]">
-                  <img
-                    class="size-full"
-                    src="/images/statefarm.png"
-                    alt="Statefarm"
-                  />
-                </figure>
-                <figure class="w-full max-w-[138px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/allstate.png"
-                    alt="All State"
-                  />
-                </figure>
-                <figure class="w-full max-w-[170px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/farmers.png"
-                    alt="Farmers"
-                  />
-                </figure>
-                <figure class="w-full max-w-[170px] h-[22px]">
-                  <img
-                    class="size-full"
-                    src="/images/progressive.png"
-                    alt="Progressive"
-                  />
-                </figure>
-                <figure class="w-full max-w-[122px] h-[22px]">
-                  <img class="size-full" src="/images/geico.png" alt="Geico" />
-                </figure>
-                <figure class="w-full max-w-[166px] h-[24px]">
-                  <img
-                    class="size-full"
-                    src="/images/statefarm.png"
-                    alt="Statefarm"
-                  />
-                </figure>
+              <div class="flex items-center marquee marquee--vertical">
+                <div class="marquee__group">
+                  <figure class="w-full max-w-[138px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/allstate.png"
+                      alt="All State"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/farmers.png"
+                      alt="Farmers"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-[22px]">
+                    <img
+                      class="size-full"
+                      src="/images/progressive.png"
+                      alt="Progressive"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[122px] h-[22px]">
+                    <img
+                      class="size-full"
+                      src="/images/geico.png"
+                      alt="Geico"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[166px] h-[24px]">
+                    <img
+                      class="size-full"
+                      src="/images/statefarm.png"
+                      alt="Statefarm"
+                    />
+                  </figure>
+                </div>
+                <div aria-hidden="true" class="marquee__group">
+                  <figure class="w-full max-w-[138px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/allstate.png"
+                      alt="All State"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/farmers.png"
+                      alt="Farmers"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-[22px]">
+                    <img
+                      class="size-full"
+                      src="/images/progressive.png"
+                      alt="Progressive"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[122px] h-[22px]">
+                    <img
+                      class="size-full"
+                      src="/images/geico.png"
+                      alt="Geico"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[166px] h-[24px]">
+                    <img
+                      class="size-full"
+                      src="/images/statefarm.png"
+                      alt="Statefarm"
+                    />
+                  </figure>
+                </div>
               </div>
               <div
-                class="flex flex-col gap-y-14 items-center animate-slide-down"
+                class="flex flex-col items-center marquee marquee--reverse marquee--vertical"
               >
-                <figure class="w-full max-w-[138px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/prudential.png"
-                    alt="Prudential"
-                  />
-                </figure>
-                <figure class="w-full max-w-[170px] h-[25px]">
-                  <img
-                    class="size-full"
-                    src="/images/cover-wallet.png"
-                    alt="Cover Wallet"
-                  />
-                </figure>
-                <figure class="w-full max-w-[178px] h-[31px]">
-                  <img
-                    class="size-full"
-                    src="/images/metro-mile.png"
-                    alt="Metromile"
-                  />
-                </figure>
-                <figure class="w-full max-w-[122px] h-[23px]">
-                  <img class="size-full" src="/images/ethos.png" alt="Ethos" />
-                </figure>
-                <figure class="w-full max-w-[170px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/travelers.png"
-                    alt="Travelers"
-                  />
-                </figure>
-                <figure class="w-full max-w-[138px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/prudential.png"
-                    alt="Prudential"
-                  />
-                </figure>
-                <figure class="w-full max-w-[170px] h-[25px]">
-                  <img
-                    class="size-full"
-                    src="/images/cover-wallet.png"
-                    alt="Cover Wallet"
-                  />
-                </figure>
-                <figure class="w-full max-w-[178px] h-[31px]">
-                  <img
-                    class="size-full"
-                    src="/images/metro-mile.png"
-                    alt="Metromile"
-                  />
-                </figure>
-                <figure class="w-full max-w-[122px] h-[23px]">
-                  <img class="size-full" src="/images/ethos.png" alt="Ethos" />
-                </figure>
-                <figure class="w-full max-w-[170px] h-8">
-                  <img
-                    class="size-full"
-                    src="/images/travelers.png"
-                    alt="Travelers"
-                  />
-                </figure>
+                <div class="marquee__group">
+                  <figure class="w-full max-w-[138px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/prudential.png"
+                      alt="Prudential"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-[25px]">
+                    <img
+                      class="size-full"
+                      src="/images/cover-wallet.png"
+                      alt="Cover Wallet"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[178px] h-[31px]">
+                    <img
+                      class="size-full"
+                      src="/images/metro-mile.png"
+                      alt="Metromile"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[122px] h-[23px]">
+                    <img
+                      class="size-full"
+                      src="/images/ethos.png"
+                      alt="Ethos"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/travelers.png"
+                      alt="Travelers"
+                    />
+                  </figure>
+                </div>
+                <div aria-hidden="true" class="marquee__group">
+                  <figure class="w-full max-w-[138px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/prudential.png"
+                      alt="Prudential"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-[25px]">
+                    <img
+                      class="size-full"
+                      src="/images/cover-wallet.png"
+                      alt="Cover Wallet"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[178px] h-[31px]">
+                    <img
+                      class="size-full"
+                      src="/images/metro-mile.png"
+                      alt="Metromile"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[122px] h-[23px]">
+                    <img
+                      class="size-full"
+                      src="/images/ethos.png"
+                      alt="Ethos"
+                    />
+                  </figure>
+                  <figure class="w-full max-w-[170px] h-8">
+                    <img
+                      class="size-full"
+                      src="/images/travelers.png"
+                      alt="Travelers"
+                    />
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="py-30 max-sm:py-16 max-md:py-24">
         <div
           class="w-full max-w-[1142px] px-4 mx-auto max-xl:max-w-[960px] max-lg:max-w-[720px] max-md:max-w-[540px] max-sm:max-w-full"
@@ -909,21 +934,21 @@
             </div>
           </div>
           <div
-            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[50px] justify-between max-xl:gap-x-[30px] max-lg:flex-wrap max-lg:flex-col-reverse max-sm:rounded-2xl max-sm:mt-[70px]"
+            class="bg-gray-50 rounded-3xl mt-[98px] flex gap-x-[113px] max-xl:gap-x-[30px] max-lg:flex-wrap max-lg:flex-col-reverse max-sm:rounded-2xl max-sm:mt-[70px]"
           >
             <div
-              class="py-[65px] pl-14 w-full max-w-[470px] max-xl:pl-8 max-lg:max-w-full max-lg:py-10 max-lg:px-8 max-sm:p-8 max-sm:px-6"
+              class="py-[65px] pl-14 w-full max-w-[520px] max-xl:pl-8 max-lg:max-w-full max-lg:py-10 max-lg:px-8 max-sm:p-8 max-sm:px-6 max-xl:max-w-[450px] max-xss:pt-16"
             >
               <h3
                 class="text-gray-900 text-[32px] font-bold leading-10 tracking-[-0.32px] font-sans-serif max-sm:text-2xl max-sm:leading-8"
               >
-                Coverage Profile
+                Expert Support
               </h3>
               <p
                 class="text-gray-900 text-xl leading-[30px] font-normal pt-4 max-sm:pt-3 max-sm:text-base max-sm:leading-6"
               >
-                Your Coverage Profile gives you a clear view of all your
-                insurance in one place.
+                No more confusion with insurance. Our experts guide you every
+                step of the way.
               </p>
               <div
                 class="flex gap-x-8 max-xl:gap-x-4 max-md:flex-wrap max-md:flex-col"
@@ -945,7 +970,7 @@
                         />
                       </figure>
                     </div>
-                    Coverage Details
+                    Get Help
                   </li>
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3 max-sm:text-lg max-sm:gap-x-2"
@@ -961,7 +986,7 @@
                         />
                       </figure>
                     </div>
-                    Easy to Track
+                    Smart Choices
                   </li>
                 </ul>
                 <ul
@@ -981,7 +1006,7 @@
                         />
                       </figure>
                     </div>
-                    Highlight Gaps
+                    Clear Answers
                   </li>
                   <li
                     class="text-xl text-gray-900 font-normal leading-[30px] flex items-center gap-x-3 max-sm:text-lg max-sm:gap-x-2"
@@ -997,7 +1022,7 @@
                         />
                       </figure>
                     </div>
-                    Quick Snapshot
+                    Always Available
                   </li>
                 </ul>
               </div>
@@ -1013,36 +1038,41 @@
                 />
               </a>
             </div>
-            <div
-              class="relative max-lg:w-[500px] max-lg:mx-auto max-lg:-mt-[50px] max-md:w-full max-md:px-4"
-            >
-              <figure
-                class="w-[580px] relative -mt-[50px] max-xl:w-[470px] max-xl:mt-0 max-xl:-bottom-1 max-xl:relative max-md:w-full"
+            <div class="max-lg:-mt-[50px] max-md:w-full max-md:px-4">
+              <div
+                class="relative max-lg:w-[343px] max-lg:mx-auto max-md:max-lg:w-[300px] max-sm:w-[95%]"
               >
-                <img
-                  src="/images/coverage-profile.png"
-                  alt="Coverage Profile"
-                  class="size-full"
-                />
-              </figure>
-              <figure
-                class="w-[190px] absolute left-0 bottom-4 rounded-xl overflow-hidden shadow-2xs max-lg:bottom-0 max-md:left-4 max-sm:w-[100px]"
-              >
-                <img
-                  src="/images/coverage-details.png"
-                  alt="Coverage Details"
-                  class="size-full"
-                />
-              </figure>
-              <figure
-                class="w-[154px] absolute top-4 right-4 rounded-xl overflow-hidden shadow-2xs max-lg:top-16 max-xs:w-[100px]"
-              >
-                <img
-                  src="/images/coverage-score.png"
-                  alt="Coverage Score"
-                  class="size-full"
-                />
-              </figure>
+                <figure
+                  class="w-[343px] relative -mt-[50px] max-xl:relative max-md:w-full max-lg:mt-0"
+                >
+                  <img
+                    src="/images/support.png"
+                    alt="Expert Support"
+                    class="size-full"
+                  />
+                </figure>
+                <div
+                  class="p-3 bg-white rounded-xl shadow-2xs flex gap-x-3 absolute -right-18 bottom-0 max-sm:right-0 max-sm:-bottom-4 max-xs:bottom-0 max-xs:-right-3 max-xss:-bottom-6"
+                >
+                  <div
+                    class="rounded-full size-10 bg-green-100 flex items-center justify-center"
+                  >
+                    <figure class="size-7">
+                      <img
+                        src="/images/svg/white-headset.svg"
+                        alt="Headset"
+                        class="size-full"
+                      />
+                    </figure>
+                  </div>
+                  <div class="flex flex-col gap-y-3">
+                    <p class="font-semibold text-gray-900 text-sm leading-none">
+                      Have More Questions?
+                    </p>
+                    <div class="bg-gray-300 w-24 h-2 rounded-xl"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1168,7 +1198,7 @@
               </a>
             </div>
             <div
-              class="w-1/2 pt-10 pl-25 relative max-lg:w-full max-lg:mx-auto max-lg:pl-0 max-sm:w-[70%]"
+              class="w-1/2 pt-10 pl-25 relative max-lg:w-full max-lg:mx-auto max-lg:pl-0 max-sm:w-[70%] flex justify-center"
             >
               <div
                 class="relative w-full max-w-[282px] after:size-[162px] after:absolute after:-right-[130px] after:content-[''] after:bg-[image:var(--image-banner-right)] after:bg-contain after:bg-no-repeat after:-top-10 before:absolute before:-left-[90px] before:content-[''] before:bg-[image:var(--image-banner-left)] before:bg-contain before:bg-no-repeat before:bottom-0 before:size-[162px] max-lg:before:-left-[92px] max-xs:after:size-[100px] max-xs:before:size-[100px] max-xs:after:-right-[80px] max-xs:before:-left-[50px] max-xss:after:-right-[65px] max-xss:before:-left-[40px]"

@@ -17,6 +17,14 @@
   font-display: swap;
 }
 
+:root {
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 8);
+  --duration: 10s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
 /* (Optional) v4 CSS-first customization using @theme */
 @theme {
   /* Break Points */
@@ -34,6 +42,7 @@
   --color-gray-50: #f6f6f6;
   --color-gray-100: #f5f5f5;
   --color-gray-200: #e6e6e6;
+  --color-gray-300: #ebebeb;
   --color-gray-900: #383838;
 
   --color-orange-50: #fff3eb;
@@ -68,15 +77,6 @@
   @apply p-0;
 }
 
-.icon-list-col1 {
-  -webkit-animation: scroll 35s linear 0s infinite;
-  animation: scroll 35s linear 0s infinite;
-}
-
-.icon-list {
-  height: calc(115px * 4);
-}
-
 @keyframes slide-up {
   0% {
     transform: translateY(0);
@@ -95,6 +95,59 @@
   }
 }
 
+.wrapper--vertical {
+  flex-direction: row;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+}
+.marquee--vertical,
+.marquee--vertical .marquee__group {
+  flex-direction: column;
+}
+.marquee--vertical {
+  --mask-direction: to bottom;
+}
+.marquee {
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee--vertical .marquee__group {
+  animation: scroll-y var(--duration) linear infinite;
+}
+.marquee--vertical,
+.marquee--vertical .marquee__group {
+  flex-direction: column;
+}
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+}
+@keyframes scroll-y {
+  0% {
+    transform: translateY(var(--scroll-start));
+  }
+  100% {
+    transform: translateY(var(--scroll-end));
+  }
+}
 @media (max-width: 767px) {
   .site-header .navbar-toggler {
     background-color: transparent;
@@ -185,5 +238,12 @@
   }
   .accordion-content.open {
     @apply pr-0;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --size: clamp(6rem, 1rem + 25vmin, 18rem);
+    --gap: calc(var(--size) / 3.5);
   }
 }
