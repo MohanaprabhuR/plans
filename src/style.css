@@ -38,6 +38,12 @@
   --font-sans: "TimelessSansVF";
   --font-sans-serif: "TimelessSerif";
 
+  --font-var-400: "wght" 400, "ital" 0, "STYL" 100;
+  --font-var-500: "wght" 500, "ital" 0, "STYL" 100;
+  --font-var-600: "wght" 600, "ital" 0, "STYL" 100;
+  --font-var-700: "wght" 700, "ital" 0, "STYL" 100;
+  --font-var-700-serif: "wght" 700, "ital" 0, "STYL" 0;
+
   /* Colors */
   --color-gray-50: #f6f6f6;
   --color-gray-100: #f5f5f5;
