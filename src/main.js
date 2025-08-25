@@ -91,3 +91,26 @@ function navToggle() {
 }
 
 navToggle();
+
+function scrollAnimation() {
+  const items = document.querySelectorAll(".animate-item");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = [...items].indexOf(entry.target);
+          entry.target.style.transitionDelay = `${index * 0.1}s`;
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+          entry.target.style.transitionDelay = "0s";
+        }
+      });
+    },
+    { threshold: 0.2 },
+  );
+
+  items.forEach((item) => observer.observe(item));
+}
+scrollAnimation();
