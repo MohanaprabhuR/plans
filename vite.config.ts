@@ -1,7 +1,7 @@
 // vite.config.ts
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
-import legacy from "@vitejs/plugin-legacy"; // optional
+import legacy from "@vitejs/plugin-legacy";
 
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,6 +20,7 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, "index.html"),
         contact: path.resolve(__dirname, "contact.html"),
+        blog_single: path.resolve(__dirname, "blog_single.html"),
       },
     },
   },
