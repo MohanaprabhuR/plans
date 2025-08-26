@@ -95,28 +95,15 @@ navToggle();
 function scrollAnimation() {
   const items = document.querySelectorAll(".animate-item");
 
-  // // If on mobile (screen width <= 768px), just show items immediately
-  // if (window.innerWidth <= 768) {
-  //   items.forEach((item) => {
-  //     item.classList.add("show");
-  //     item.style.transition = "none"; // disable animation
-  //   });
-  //   return;
-  // }
-
-  // Otherwise enable scroll animations
   const observer = new IntersectionObserver(
-    (entries) => {
+    (entries, obs) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const index = [...items].indexOf(entry.target);
           entry.target.style.transitionDelay = `${index * 0.1}s`;
           entry.target.classList.add("show");
+          obs.unobserve(entry.target);
         }
-        // else {
-        //   entry.target.classList.remove("show");
-        //   entry.target.style.transitionDelay = "0s";
-        // }
       });
     },
     { threshold: 0.2 },
