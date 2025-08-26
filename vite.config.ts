@@ -1,8 +1,7 @@
 // vite.config.ts
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
-import legacy from "@vitejs/plugin-legacy";
-import { splitVendorChunkPlugin } from "vite";
+import legacy from "@vitejs/plugin-legacy"; // optional
 
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -11,7 +10,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  plugins: [tailwindcss(), legacy(), splitVendorChunkPlugin()],
+  plugins: [
+    tailwindcss(),
+    legacy(), // remove if not needed
+  ],
   server: {
     host: "localhost",
     port: 3000,
