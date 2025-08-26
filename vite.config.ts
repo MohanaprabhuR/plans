@@ -1,28 +1,25 @@
-// vite.config.ts
-import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
-import legacy from "@vitejs/plugin-legacy"; // optional
-
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import legacy from "@vitejs/plugin-legacy";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    legacy(), // remove if not needed
-  ],
   server: {
     host: "localhost",
     port: 3000,
   },
+  plugins: [legacy()],
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "index.html"),
-        contact: path.resolve(__dirname, "contact.html"),
+        main: path.resolve(process.cwd(), "index.html"),
+        contact: path.resolve(process.cwd(), "contact.html"),
+      },
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            return "vendor";
+          }
+        },
       },
     },
   },
