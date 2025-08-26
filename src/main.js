@@ -112,10 +112,11 @@ function scrollAnimation() {
           const index = [...items].indexOf(entry.target);
           entry.target.style.transitionDelay = `${index * 0.1}s`;
           entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
-          entry.target.style.transitionDelay = "0s";
         }
+        // else {
+        //   entry.target.classList.remove("show");
+        //   entry.target.style.transitionDelay = "0s";
+        // }
       });
     },
     { threshold: 0.2 },
