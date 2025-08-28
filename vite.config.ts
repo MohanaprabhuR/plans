@@ -22,6 +22,7 @@ export default defineConfig({
         contact: path.resolve(__dirname, "contact.html"),
         blog_single: path.resolve(__dirname, "blog_single.html"),
         term_of_use: path.resolve(__dirname, "term_of_use.html"),
+        privacy_policy: path.resolve(__dirname, "privacy_policy.html"),
       },
     },
   },
