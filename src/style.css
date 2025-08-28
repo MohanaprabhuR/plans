@@ -1,6 +1,8 @@
 /* src/style.css */
 @import "tailwindcss";
 
+/* Font Family */
+
 @font-face {
   font-family: "TimelessSans";
   src: url("/fonts/TimelessSans.woff2") format("truetype");
@@ -121,12 +123,19 @@
   --animate-slide-down: slide-down 35s linear 0s infinite;
 }
 
+.site-header.scrolled {
+  filter: drop-shadow(0 4px 54px rgba(105, 110, 124, 0.12));
+}
+
+/* Accordian */
 .accordion-content.open {
   @apply pt-4 pr-12;
 }
 .footer-list .accordion-content.open {
   @apply p-0;
 }
+
+/* Popup animation */
 .animate-item {
   opacity: 0;
   transform: scale(0.8);
@@ -137,6 +146,8 @@
   opacity: 1;
   transform: scale(1);
 }
+
+/* Active link on privacy and terms page */
 .active-link {
   @apply relative text-orange-200;
   font-variation-settings: var(--font-var-600);
@@ -169,6 +180,7 @@
   }
 }
 
+/* Logo Animation */
 .wrapper--vertical {
   flex-direction: row;
   height: 100vh;
@@ -223,9 +235,6 @@
   }
 }
 
-.site-header.scrolled {
-  filter: drop-shadow(0 4px 54px rgba(105, 110, 124, 0.12));
-}
 @media (max-width: 767px) {
   .site-header .navbar-toggler {
     background-color: transparent;
