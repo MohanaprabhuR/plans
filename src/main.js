@@ -117,59 +117,44 @@ scrollAnimation();
 const sections = document.querySelectorAll("h3[id]");
 const navLinks = document.querySelectorAll(".list-item a");
 
-// Highlight on scroll
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         navLinks.forEach((link) => {
-          link.classList.remove(
-            "text-orange-200",
-            "font-variation-settings:var(--font-var-600)]",
-          );
+          link.parentElement.classList.remove("active-link"); // remove from li
           if (link.getAttribute("href") === `#${entry.target.id}`) {
-            link.classList.add(
-              "text-orange-200",
-              "font-variation-settings:var(--font-var-600)]",
-            );
+            link.parentElement.classList.add("active-link"); // add to li
           }
         });
       }
     });
   },
-  { threshold: 0.5 }, // adjust if needed
+  { threshold: 0.5 },
 );
 
 sections.forEach((section) => observer.observe(section));
 
-// Smooth scroll with 100px offset
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault(); // prevent default jump
+    e.preventDefault();
 
-    // remove old highlight
+    // remove from all li
     navLinks.forEach((lnk) =>
-      lnk.classList.remove(
-        "text-orange-200",
-        "font-variation-settings:var(--font-var-600)]",
-      ),
+      lnk.parentElement.classList.remove("active-link"),
     );
 
-    // add highlight to clicked link
-    e.currentTarget.classList.add(
-      "text-orange-200",
-      "font-variation-settings:var(--font-var-600)]",
-    );
+    // add only to clicked li
+    e.currentTarget.parentElement.classList.add("active-link");
 
-    // get target section
+    // smooth scroll
     const targetId = link.getAttribute("href").substring(1);
     const target = document.getElementById(targetId);
 
     if (target) {
-      const yOffset = -100; // offset from top
+      const yOffset = -100;
       const y =
         target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   });

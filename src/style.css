@@ -135,6 +135,19 @@
   opacity: 1;
   transform: scale(1);
 }
+.active-link {
+  @apply relative text-orange-200;
+  font-variation-settings: var(--font-var-600);
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #ff5e00;
+  left: 0;
+  top: 0;
+}
 
 @keyframes slide-up {
   0% {
