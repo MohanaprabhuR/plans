@@ -21,6 +21,7 @@ export default defineConfig({
         main: path.resolve(__dirname, "index.html"),
         contact: path.resolve(__dirname, "contact.html"),
         blog_single: path.resolve(__dirname, "blog_single.html"),
+        term_of_use: path.resolve(__dirname, "term_of_use.html"),
       },
     },
   },

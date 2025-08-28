@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/blog_single", "destination": "/blog_single.html" }
+    { "source": "/blog_single", "destination": "/blog_single.html" },
+    { "source": "/term_of_use", "destination": "/term_of_use.html" }
   ]
 }

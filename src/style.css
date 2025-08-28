@@ -58,6 +58,7 @@
   --font-sans-serif: "TimelessSerif", timeless-serif-fallback;
 
   --font-var-400: "wght" 400, "ital" 0, "STYL" 100;
+  --font-var-420: "wght" 420, "ital" 0, "STYL" 100;
   --font-var-500: "wght" 500, "ital" 0, "STYL" 100;
   --font-var-600: "wght" 600, "ital" 0, "STYL" 100;
   --font-var-700: "wght" 700, "ital" 0, "STYL" 100;
@@ -86,10 +87,15 @@
   --color-green-50: #dcfce7;
   --color-green-100: #15803d;
 
+  --text-13: 13px;
   --text-32: 2rem;
+  --text-40: 2.5rem;
 
   /* Leterspacing */
-  --tracking-32: 0.32px;
+
+  --tracking-8: -0.8px;
+  --tracking-24: -0.24px;
+  --tracking-32: -0.32px;
 
   --shadow-xss: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
   --shadow-2xs: 0 4px 24px 0 rgba(33, 33, 33, 0.08);
@@ -102,6 +108,7 @@
   /* Bg Images */
   --image-banner-left: url("/images/svg/image-banner-left.svg");
   --image-banner-right: url("/images/svg/image-banner-right.svg");
+  --image-tick-red: url("/images/svg/tick-red.svg");
   --background-image-blog-gradient: linear-gradient(
     123deg,
     #fff3eb 0%,
